@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Character/Sprites/Sprite.png" type="Texture" id=2]
+
+[node name="Level" type="Node2D"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Character" type="KinematicBody2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="Character"]
+scale = Vector2( 0.00691106, 0.00691106 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}

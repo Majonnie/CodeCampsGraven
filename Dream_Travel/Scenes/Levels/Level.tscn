@@ -1,20 +1,13 @@
-<<<<<<< HEAD
 [gd_scene load_steps=12 format=2]
-=======
-[gd_scene load_steps=35 format=2]
->>>>>>> 70e2f198d71f5c5585dfe886c9612229e84bf5e3
 
 [ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Character/Sprites/SpriteFront.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Levels/Tilesets/0x72_DungeonTilesetII_v1.4.png" type="Texture" id=3]
-<<<<<<< HEAD
 [ext_resource path="res://Scenes/UI/HUD/HUD.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/UI/HUD/HUD_Mask.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/Character/Sprites/SpriteBack.png" type="Texture" id=6]
-=======
 [ext_resource path="res://Scenes/Levels/Tilesets/MysticChroma_Basics.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/Levels/Tilesets/Dungeon_Tileset.png" type="Texture" id=5]
->>>>>>> 70e2f198d71f5c5585dfe886c9612229e84bf5e3
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )

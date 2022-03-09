@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/4 Walls, Floor & Doors.png-4c7290c0ba20dd63212931ed0e6f943c.stex"
+path="res://.import/Tools.png-2b408916f30aeb1b9875d3c2bcda6f0d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Levels/4 Walls, Floor & Doors.png"
-dest_files=[ "res://.import/4 Walls, Floor & Doors.png-4c7290c0ba20dd63212931ed0e6f943c.stex" ]
+source_file="res://Scenes/Levels/Tilesets/Tools.png"
+dest_files=[ "res://.import/Tools.png-2b408916f30aeb1b9875d3c2bcda6f0d.stex" ]
 
 [params]
 

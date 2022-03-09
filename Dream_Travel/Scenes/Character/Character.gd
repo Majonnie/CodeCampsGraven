@@ -1,10 +1,10 @@
 extends KinematicBody2D
 
-var speed = 200
+var speed = 300
 var direction = Vector2.ZERO
 
 func _process(delta):
-	move_and_slide(direction * speed)
+	var __ = move_and_slide(direction * speed)
 	
 
 func _input(event):

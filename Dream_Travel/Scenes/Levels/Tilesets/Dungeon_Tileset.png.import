@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/0x72_DungeonTilesetII_v1.4.png-7865af451729b6ca78f15f54fb955fcd.stex"
+path="res://.import/Dungeon_Tileset.png-78d3687330f8869505659ae8875752a7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Levels/0x72_DungeonTilesetII_v1.4.png"
-dest_files=[ "res://.import/0x72_DungeonTilesetII_v1.4.png-7865af451729b6ca78f15f54fb955fcd.stex" ]
+source_file="res://Scenes/Levels/Tilesets/Dungeon_Tileset.png"
+dest_files=[ "res://.import/Dungeon_Tileset.png-78d3687330f8869505659ae8875752a7.stex" ]
 
 [params]
 

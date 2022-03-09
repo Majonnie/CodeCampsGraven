@@ -10,7 +10,8 @@ config_version=4
 
 [application]
 
-config/name="TestColision"
+config/name="Graven_GitHub"
+run/main_scene="res://Scenes/Levels/Level.tscn"
 config/icon="res://icon.png"
 
 [display]

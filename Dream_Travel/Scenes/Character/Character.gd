@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 onready var animated_sprite = get_node("AnimatedSprite")
 
-var speed = 300
+var speed = 200
 var direction = Vector2.ZERO
 
 func _process(delta):
@@ -20,6 +20,8 @@ func _input(event):
 	match(direction):
 		Vector2.DOWN: animated_sprite.play("MoveDown")
 		Vector2.UP: animated_sprite.play("MoveUp")
+		Vector2.RIGHT: animated_sprite.play("MoveRight")
+		Vector2.LEFT: animated_sprite.play("MoveLeft")
 		Vector2.ZERO:
 			animated_sprite.stop()
 			animated_sprite.set_frame(0)

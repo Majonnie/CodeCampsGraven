@@ -10,10 +10,10 @@ config_version=4
 
 [application]
 
-config/name="CodeCampsGraven"
-run/main_scene="res://Scenes/Levels/Level.tscn"
+config/name="TestColision"
 config/icon="res://icon.png"
 
+<<<<<<< HEAD
 [display]
 
 window/size/width=640
@@ -47,6 +47,8 @@ texture={
 "svg/scale": 1.0
 }
 
+=======
+>>>>>>> d0f99cc67e401a768b82bf2dbe0042fd8c5a15f5
 [physics]
 
 common/enable_pause_aware_picking=true

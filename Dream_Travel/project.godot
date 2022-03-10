@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="CodeCampsGraven"
-run/main_scene="res://Scenes/Levels/Level.tscn"
+run/main_scene="res://Scenes/Levels/Chambre_de_Charly.tscn"
 config/icon="res://icon.png"
 
 [display]

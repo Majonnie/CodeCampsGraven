@@ -7,8 +7,8 @@
 [ext_resource path="res://Scenes/Levels/Tilesets/Dungeon_Tileset.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_front.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/UI/HUD/HUD.png" type="Texture" id=7]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/pixil-frame-0 (23).png" type="Texture" id=8]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/pixil-frame-0 (25).png" type="Texture" id=9]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_back.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_front.png" type="Texture" id=9]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_L.png" type="Texture" id=10]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_R.png" type="Texture" id=11]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_walking_L.png" type="Texture" id=12]
@@ -1171,7 +1171,7 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 
 [sub_resource type="SpriteFrames" id=30]
 animations = [ {
-"frames": [ ExtResource( 6 ), ExtResource( 8 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "MoveDown",
 "speed": 5.0
@@ -1186,7 +1186,7 @@ animations = [ {
 "name": "MoveRight",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 13 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 13 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "MoveUp",
 "speed": 5.0

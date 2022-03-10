@@ -14,6 +14,11 @@ config/name="Graven_GitHub"
 run/main_scene="res://Scenes/Levels/Level.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+GAME="*res://Autoload/Game.gd"
+EVENTS="*res://Autoload/Events.gd"
+
 [display]
 
 window/size/width=640

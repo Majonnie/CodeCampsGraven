@@ -5,11 +5,11 @@ onready var animated_sprite = get_node("AnimatedSprite")
 var speed = 200
 var direction = Vector2.ZERO
 
-func _process(delta):
+func _process(_delta):
 	var __ = move_and_slide(direction * speed)
 	
 
-func _input(event):
+func _input(_event):
 	
 	direction.x = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
 	direction.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))

@@ -1,7 +1,7 @@
-[gd_scene load_steps=71 format=2]
+[gd_scene load_steps=81 format=2]
 
 [ext_resource path="res://Scenes/Levels/tilesets Sanctuaire/Texture/ddybxx9-6df4dcb5-d2fb-4d67-9d6d-afaa5ff7dd0b-removebg-preview.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/Character/Sprites/Sprite.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/UI/HUD/HUD_Mask.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Levels/tilesets Sanctuaire/Texture/TX Tileset Grass.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/Levels/tilesets Sanctuaire/Texture/TX Tileset Wall.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=5]
@@ -10,6 +10,15 @@
 [ext_resource path="res://Scenes/Levels/tilesets Sanctuaire/Texture/TX Tileset Stone Ground.png" type="Texture" id=8]
 [ext_resource path="res://Scenes/Levels/tilesets Sanctuaire/Texture/TX Plant.png" type="Texture" id=9]
 [ext_resource path="res://Scenes/Levels/tilesets Sanctuaire/Texture/b295be59516c16b909e8eaa8d034b02e.png" type="Texture" id=10]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_back.png" type="Texture" id=11]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_front.png" type="Texture" id=12]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_front.png" type="Texture" id=13]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_L.png" type="Texture" id=14]
+[ext_resource path="res://Scenes/UI/HUD/HUD.png" type="Texture" id=15]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_R.png" type="Texture" id=16]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_walking_L.png" type="Texture" id=17]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_back.png" type="Texture" id=18]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_walking_R.png" type="Texture" id=19]
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
 points = PoolVector2Array( 31.2021, 32, 25.3413, 32, 25.6204, 1.11185, 32, 1.9491 )
@@ -1839,8 +1848,31 @@ points = PoolVector2Array( 25.9914, 18.5114, 4.82776, 19.6743, 4.82776, 13.1624,
 24/shapes = [  ]
 24/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 12.6667, 28 )
+[sub_resource type="SpriteFrames" id=62]
+animations = [ {
+"frames": [ ExtResource( 13 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "MoveDown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "MoveLeft",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "MoveRight",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "MoveUp",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=63]
+radius = 18.7142
 
 [node name="Level 4" type="Node2D"]
 
@@ -1881,7 +1913,7 @@ position = Vector2( -1, -1 )
 tile_set = SubResource( 3 )
 cell_size = Vector2( 32, 32 )
 format = 1
-tile_data = PoolIntArray( 0, 536870916, 0, 5, 536870941, 0, 25, 536870936, 0, 29, 536870936, 0, 65536, 536870935, 0, 65540, 1610612744, 0, 65543, 8, 0, 65547, 536870920, 0, 65548, 536870927, 0, 65549, 536870924, 0, 65550, 536870924, 0, 65553, 536870927, 0, 65556, 536870928, 0, 65561, 536870937, 0, 65565, 536870937, 0, 131072, 536870916, 0, 131077, 0, 0, 131079, 20, 0, 131081, 536870938, 0, 131083, 536870916, 0, 131091, 9, 0, 131093, 8, 0, 196608, 536870936, 0, 196609, 536870936, 0, 196610, 536870929, 0, 196615, 536870926, 0, 196617, 536870936, 0, 196618, 536870936, 0, 196619, 536870920, 0, 196627, 1610612738, 0, 196628, 1610612738, 0, 196634, 536870939, 0, 262155, 536870920, 0, 262169, 536870936, 0, 262171, 536870933, 0, 262173, 536870936, 0, 327691, 536870920, 0, 327698, 536870921, 0, 327699, 536870932, 0, 327700, 536870932, 0, 327701, 536870932, 0, 327702, 536870916, 0, 327705, 536870937, 0, 327709, 536870937, 0, 393218, 536870925, 0, 393227, 536870915, 0, 393228, 536870915, 0, 393230, 536870912, 0, 393232, 536870915, 0, 393233, 536870915, 0, 393235, 33, 0, 458770, 536870930, 0, 524312, 536870912, 0, 524314, 3, 0, 524316, 3, 0, 720917, 9, 0, 720922, 1610612761, 0, 720925, 25, 0, 720927, 536870939, 0, 786432, 23, 0, 786450, 536870920, 0, 786453, 536870915, 0, 786454, -536870904, 0, 786455, 536870920, 0, 786458, 1610612761, 0, 786461, 25, 0, 786462, 22, 0, 786463, 22, 0, 786464, 21, 0, 851986, 536870920, 0, 851993, 536870920, 0, 851994, 1610612761, 0, 917523, 536870920, 0, 917532, 536870915, 0, 917535, 536870917, 0, 983059, 536870920, 0, 983069, 14, 0, 983070, 14, 0, 1048597, 536870920, 0, 1114116, 536870932, 0, 1114117, 536870932, 0 )
+tile_data = PoolIntArray( 0, 536870916, 0, 5, 536870941, 0, 25, 536870936, 0, 29, 536870936, 0, 65536, 536870935, 0, 65540, 1610612744, 0, 65543, 8, 0, 65547, 536870920, 0, 65548, 536870927, 0, 65549, 536870924, 0, 65550, 536870924, 0, 65553, 536870927, 0, 65556, 536870928, 0, 65561, 536870937, 0, 65565, 536870937, 0, 131072, 536870916, 0, 131077, 0, 0, 131079, 20, 0, 131081, 536870938, 0, 131083, 536870916, 0, 131091, 9, 0, 131093, 8, 0, 196608, 536870936, 0, 196609, 536870936, 0, 196610, 536870929, 0, 196615, 536870926, 0, 196617, 536870936, 0, 196618, 536870936, 0, 196619, 536870920, 0, 196627, 1610612738, 0, 196628, 1610612738, 0, 196634, 536870939, 0, 262155, 536870920, 0, 262169, 536870936, 0, 262171, 536870933, 0, 262173, 536870936, 0, 327691, 536870920, 0, 327698, 536870921, 0, 327699, 536870932, 0, 327700, 536870932, 0, 327701, 536870932, 0, 327702, 536870916, 0, 327705, 536870937, 0, 327709, 536870937, 0, 393218, 536870925, 0, 393227, 536870915, 0, 393228, 536870915, 0, 393230, 536870912, 0, 393232, 536870915, 0, 393233, 536870915, 0, 393235, 33, 0, 458770, 536870930, 0, 524292, 8, 0, 524312, 536870912, 0, 524314, 3, 0, 524316, 3, 0, 720917, 9, 0, 720922, 1610612761, 0, 720925, 25, 0, 720927, 536870939, 0, 786432, 23, 0, 786450, 536870920, 0, 786453, 536870915, 0, 786454, -536870904, 0, 786455, 536870920, 0, 786458, 1610612761, 0, 786461, 25, 0, 786462, 22, 0, 786463, 22, 0, 786464, 21, 0, 851986, 536870920, 0, 851993, 536870920, 0, 851994, 1610612761, 0, 917523, 536870920, 0, 917532, 536870915, 0, 917535, 536870917, 0, 983059, 536870920, 0, 983069, 14, 0, 983070, 14, 0, 1048597, 536870920, 0, 1114116, 536870932, 0, 1114117, 536870932, 0 )
 
 [node name="barriere" type="TileMap" parent="Wall/wall third bis2/Pray"]
 tile_set = SubResource( 7 )
@@ -1890,13 +1922,14 @@ format = 1
 tile_data = PoolIntArray( 0, 536870927, 0, 4, 5, 0, 7, 5, 0, 65558, 536870917, 0, 65567, 536870917, 0, 131076, 536870924, 0, 196608, 536870913, 0, 196610, 536870913, 0, 196611, 536870929, 0, 196616, 536870914, 0, 196634, 536870916, 0, 196636, 536870916, 0, 262144, 536870913, 0, 262146, 536870913, 0, 262148, 536870928, 0, 262149, 536870921, 0, 262150, 536870920, 0, 262151, 536870928, 0, 262152, 536870914, 0, 327690, 14, 0, 327706, 536870916, 0, 327708, 536870916, 0, 393231, 8, 0, 393238, 536870917, 0, 393247, 536870917, 0, 458754, 536870915, 0, 458755, 536870915, 0, 458756, 536870915, 0, 458757, 536870924, 0, 458758, 536870924, 0, 458759, 536870924, 0, 458760, 536870915, 0, 458768, 536870930, 0, 524318, 536870915, 0, 524319, 16, 0, 589826, 536870919, 0, 655365, 536870931, 0, 655375, 6, 0, 655376, 6, 0, 655377, 6, 0, 655384, 536870919, 0, 655385, 8, 0, 720896, 536870913, 0, 720897, 536870915, 0, 720898, 536870915, 0, 720899, 536870915, 0, 720900, 536870915, 0, 720910, -1073741818, 0, 720914, -1610612730, 0, 720923, 536870912, 0, 720925, 536870912, 0, 786459, 4, 0, 786460, 4, 0, 851981, 536870915, 0, 851982, 536870924, 0, 851991, 536870915, 0, 851992, 536870915, 0, 983039, 536870912, 0, 917506, 536870913, 0, 917511, 536870914, 0, 917516, 536870924, 0, 917522, 536870924, 0, 917529, 536870924, 0, 917530, 536870924, 0, 917531, 536870924, 0, 917535, 536870915, 0, 983071, 17, 0, 1048595, 536870924, 0, 1048596, 536870924, 0, 1114114, 536870924, 0, 1114115, 536870924, 0, 1114116, 536870915, 0, 1114117, 536870915, 0, 1114118, 536870924, 0, 1114119, 536870924, 0, 1114133, 536870924, 0, 1114134, 536870924, 0, 1114135, 536870924, 0, 1114136, 536870924, 0, 1114137, 536870924, 0, 1114138, 536870924, 0, 1114139, 536870924, 0, 1114140, 536870924, 0, 1114141, 536870924, 0, 1114142, 536870924, 0, 1114143, 536870924, 0 )
 
 [node name="Character" type="KinematicBody2D" parent="."]
-position = Vector2( 159, 493 )
+position = Vector2( 422, 224 )
 scale = Vector2( 0.75, 0.75 )
 script = ExtResource( 5 )
 
-[node name="Sprite" type="Sprite" parent="Character"]
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 2 )
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Character"]
+scale = Vector2( 0.015, 0.015 )
+frames = SubResource( 62 )
+animation = "MoveLeft"
 __meta__ = {
 "_edit_lock_": true
 }
@@ -1917,8 +1950,34 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Character"]
-position = Vector2( 0.666667, 1.33333 )
-shape = SubResource( 4 )
+position = Vector2( 0, 4 )
+shape = SubResource( 63 )
+
+[node name="UI_Container" type="CanvasLayer" parent="."]
+
+[node name="UI" type="Control" parent="UI_Container"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="HUD" type="TextureRect" parent="UI_Container/UI"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 143.0
+margin_bottom = 45.0
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D" type="Light2D" parent="UI_Container/UI/HUD"]
+position = Vector2( 69, 11 )
+texture = ExtResource( 2 )
+mode = 3
+range_layer_min = 1
+range_layer_max = 1
 __meta__ = {
 "_edit_lock_": true
 }

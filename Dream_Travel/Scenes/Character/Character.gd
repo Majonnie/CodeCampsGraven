@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 onready var animated_sprite = get_node("AnimatedSprite")
 
-var speed = 200
+var speed = 150
 var direction = Vector2.ZERO
 
 func _process(_delta):

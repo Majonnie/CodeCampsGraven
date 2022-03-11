@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/slime_B.png-169917529b3ab8b0a4b7e3e39d1f572e.stex"
+path="res://.import/Smoke &amp; Fire.png-edf452c6f6db631ce579b442bb15fd51.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Ennemies/Sprites/slime_B.png"
-dest_files=[ "res://.import/slime_B.png-169917529b3ab8b0a4b7e3e39d1f572e.stex" ]
+source_file="res://Scenes/Ennemies/Sprites/RICARDO/Smoke &amp; Fire.png"
+dest_files=[ "res://.import/Smoke &amp; Fire.png-edf452c6f6db631ce579b442bb15fd51.stex" ]
 
 [params]
 

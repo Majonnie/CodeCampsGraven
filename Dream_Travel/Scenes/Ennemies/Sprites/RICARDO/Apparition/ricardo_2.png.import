@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/slime_A.png-c27e7e5e0747f28d16a33d6c8a011893.stex"
+path="res://.import/ricardo_2.png-4dd625a4eb680f693ac55d5a76873174.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Ennemies/Sprites/slime_A.png"
-dest_files=[ "res://.import/slime_A.png-c27e7e5e0747f28d16a33d6c8a011893.stex" ]
+source_file="res://Scenes/Ennemies/Sprites/RICARDO/Apparition/ricardo_2.png"
+dest_files=[ "res://.import/ricardo_2.png-4dd625a4eb680f693ac55d5a76873174.stex" ]
 
 [params]
 

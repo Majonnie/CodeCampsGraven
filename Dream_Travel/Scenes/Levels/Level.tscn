@@ -1,19 +1,11 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=37 format=2]
 
 [ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/UI/HUD/HUD_Mask.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Levels/Tilesets/0x72_DungeonTilesetII_v1.4.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/Levels/Tilesets/MysticChroma_Basics.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/Levels/Tilesets/Dungeon_Tileset.png" type="Texture" id=5]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_front.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/UI/HUD/HUD.png" type="Texture" id=7]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/pixil-frame-0 (23).png" type="Texture" id=8]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/pixil-frame-0 (25).png" type="Texture" id=9]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_L.png" type="Texture" id=10]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_R.png" type="Texture" id=11]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_walking_L.png" type="Texture" id=12]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_back.png" type="Texture" id=13]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_walking_R.png" type="Texture" id=14]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
@@ -1171,24 +1163,84 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 
 [sub_resource type="SpriteFrames" id=30]
 animations = [ {
-"frames": [ ExtResource( 6 ), ExtResource( 8 ) ],
+"frames": [ null, null ],
 "loop": true,
 "name": "MoveDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 10 ), ExtResource( 12 ) ],
-"loop": true,
-"name": "MoveLeft",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 11 ), ExtResource( 14 ) ],
-"loop": true,
-"name": "MoveRight",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 13 ), ExtResource( 9 ) ],
+"frames": [ null, null ],
+"loop": true,
+"name": "MoveLeft",
+"speed": 10.0
+}, {
+"frames": [ null, null ],
+"loop": true,
+"name": "MoveRight",
+"speed": 5.0
+}, {
+"frames": [ null, null ],
 "loop": true,
 "name": "MoveUp",
+"speed": 10.0
+}, {
+"frames": [ null, null ],
+"loop": true,
+"name": "R_MoveRight",
+"speed": 5.0
+}, {
+"frames": [ null ],
+"loop": true,
+"name": "IdleDown",
+"speed": 5.0
+}, {
+"frames": [ null, null ],
+"loop": true,
+"name": "AttackLeft",
+"speed": 5.0
+}, {
+"frames": [ null ],
+"loop": true,
+"name": "IdleRight",
+"speed": 5.0
+}, {
+"frames": [ null, null ],
+"loop": false,
+"name": "AttackRight",
+"speed": 10.0
+}, {
+"frames": [ null, null ],
+"loop": false,
+"name": "AttackDown",
+"speed": 10.0
+}, {
+"frames": [ null, null ],
+"loop": true,
+"name": "R_MoveDown",
+"speed": 5.0
+}, {
+"frames": [ null ],
+"loop": true,
+"name": "IdleUp",
+"speed": 10.0
+}, {
+"frames": [ null ],
+"loop": true,
+"name": "IdleLeft",
+"speed": 10.0
+}, {
+"frames": [ null, null ],
+"loop": false,
+"name": "AttackUp",
+"speed": 10.0
+}, {
+"frames": [ null, null ],
+"loop": true,
+"name": "R_MoveLeft",
+"speed": 5.0
+}, {
+"frames": [ null, null ],
+"loop": true,
+"name": "R_MoveUp",
 "speed": 5.0
 } ]
 

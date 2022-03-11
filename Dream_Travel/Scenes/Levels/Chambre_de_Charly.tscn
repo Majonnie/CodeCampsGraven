@@ -7,7 +7,7 @@
 [ext_resource path="res://Scenes/Levels/Tileset Charly Room/interior.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/Levels/Tileset Charly Room/bed.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/Levels/Tileset Charly Room/Museum interior.PNG" type="Texture" id=7]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_back.png" type="Texture" id=8]
+[ext_resource path="res://default_env.tres" type="Texture" id=8]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_front.png" type="Texture" id=9]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_front.png" type="Texture" id=10]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_L.png" type="Texture" id=11]

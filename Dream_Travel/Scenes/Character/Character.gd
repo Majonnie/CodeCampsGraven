@@ -23,7 +23,6 @@ var facing_direction := Vector2.DOWN setget set_facing_direction, get_facing_dir
 
 signal state_changed
 signal facing_direction_changed
-signal moving_direction_changed
 
 #### ACCESSORS ####
 

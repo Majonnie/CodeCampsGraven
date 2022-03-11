@@ -110,3 +110,11 @@ func _on_moving_direction_changed() -> void:
 	if moving_direction == Vector2.ZERO or moving_direction == facing_direction:
 		return 
 	 
+
+
+func _on_AnimatedSprite_frame_changed():
+	pass # Replace with function body.
+
+
+func _on_Character_facing_direction_changed():
+	pass # Replace with function body.

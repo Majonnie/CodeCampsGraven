@@ -1,4 +1,3 @@
-[gd_scene load_steps=54 format=2]
 [gd_scene load_steps=53 format=2]
 
 [ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=1]
@@ -8,21 +7,6 @@
 [ext_resource path="res://Scenes/Levels/Tilesets/Dungeon_Tileset.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_R.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/UI/HUD/HUD.png" type="Texture" id=7]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_back_attack_A.png" type="Texture" id=8]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_attack_L_B.png" type="Texture" id=9]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_L.png" type="Texture" id=10]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_R.png" type="Texture" id=11]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_walking_L.png" type="Texture" id=12]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_back.png" type="Texture" id=13]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_walking_R.png" type="Texture" id=14]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_attack_R.png" type="Texture" id=15]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_attack_L.png" type="Texture" id=16]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_front_B.png" type="Texture" id=17]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_front.png" type="Texture" id=18]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_attack_R_B.png" type="Texture" id=19]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_front_attack_A.png" type="Texture" id=20]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_back.png" type="Texture" id=21]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_back_attack_B.png" type="Texture" id=22]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_F.png" type="Texture" id=8]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_L.png" type="Texture" id=9]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_F.png" type="Texture" id=10]
@@ -1233,22 +1217,6 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 
 [sub_resource type="SpriteFrames" id=30]
 animations = [ {
-"frames": [ ExtResource( 16 ), ExtResource( 9 ) ],
-"loop": false,
-"name": "AttackLeft",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 6 ) ],
-"loop": true,
-"name": "IdleDown",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 11 ) ],
-"loop": true,
-"name": "IdleRight",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 6 ), ExtResource( 18 ) ],
 "frames": [ ExtResource( 15 ), ExtResource( 18 ) ],
 "loop": true,
 "name": "R_MoveRight",
@@ -1284,7 +1252,6 @@ animations = [ {
 "name": "MoveRight",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 13 ), ExtResource( 21 ) ],
 "frames": [ ExtResource( 13 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "MoveUp",

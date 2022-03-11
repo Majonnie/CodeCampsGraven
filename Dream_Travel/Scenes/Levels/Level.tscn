@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/UI/HUD/HUD_Mask.png" type="Texture" id=2]
@@ -7,13 +7,21 @@
 [ext_resource path="res://Scenes/Levels/Tilesets/Dungeon_Tileset.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_front.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/UI/HUD/HUD.png" type="Texture" id=7]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/pixil-frame-0 (23).png" type="Texture" id=8]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/pixil-frame-0 (25).png" type="Texture" id=9]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_back_attack_A.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_attack_L_B.png" type="Texture" id=9]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_L.png" type="Texture" id=10]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_R.png" type="Texture" id=11]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_walking_L.png" type="Texture" id=12]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_back.png" type="Texture" id=13]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_walking_R.png" type="Texture" id=14]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_attack_R.png" type="Texture" id=15]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_attack_L.png" type="Texture" id=16]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_front_B.png" type="Texture" id=17]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_front.png" type="Texture" id=18]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_attack_R_B.png" type="Texture" id=19]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_front_attack_A.png" type="Texture" id=20]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_side_back.png" type="Texture" id=21]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/base_sprite_charly_back_attack_B.png" type="Texture" id=22]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
@@ -86,6 +94,9 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=26]
 points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=32]
+points = PoolVector2Array( 11.7684, 12.9831, 2.27959, 12.9831, 3.11684, 2.6571, 12.8847, 2.93619 )
 
 [sub_resource type="ConvexPolygonShape2D" id=27]
 points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
@@ -1168,28 +1179,103 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 62/shape_one_way_margin = 0.0
 62/shapes = [  ]
 62/z_index = 0
+63/name = "0x72_DungeonTilesetII_v1.4.png 63"
+63/texture = ExtResource( 3 )
+63/tex_offset = Vector2( 0, 0 )
+63/modulate = Color( 1, 1, 1, 1 )
+63/region = Rect2( 320, 288, 32, 32 )
+63/tile_mode = 0
+63/occluder_offset = Vector2( 0, 0 )
+63/navigation_offset = Vector2( 0, 0 )
+63/shape_offset = Vector2( 0, 0 )
+63/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+63/shape_one_way = false
+63/shape_one_way_margin = 0.0
+63/shapes = [  ]
+63/z_index = 0
+64/name = "Dungeon_Tileset.png 64"
+64/texture = ExtResource( 5 )
+64/tex_offset = Vector2( 0, 0 )
+64/modulate = Color( 1, 1, 1, 1 )
+64/region = Rect2( 0, 128, 15, 16 )
+64/tile_mode = 0
+64/occluder_offset = Vector2( 0, 0 )
+64/navigation_offset = Vector2( 0, 0 )
+64/shape_offset = Vector2( 0, 0 )
+64/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+64/shape = SubResource( 32 )
+64/shape_one_way = false
+64/shape_one_way_margin = 1.0
+64/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 32 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+64/z_index = 0
 
 [sub_resource type="SpriteFrames" id=30]
 animations = [ {
-"frames": [ ExtResource( 6 ), ExtResource( 8 ) ],
+"frames": [ ExtResource( 16 ), ExtResource( 9 ) ],
+"loop": false,
+"name": "AttackLeft",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "IdleDown",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "IdleRight",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 18 ) ],
 "loop": true,
 "name": "MoveDown",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 10 ), ExtResource( 12 ) ],
 "loop": true,
 "name": "MoveLeft",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 11 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "MoveRight",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 13 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 13 ), ExtResource( 21 ) ],
 "loop": true,
 "name": "MoveUp",
-"speed": 5.0
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 17 ) ],
+"loop": false,
+"name": "AttackDown",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 19 ) ],
+"loop": false,
+"name": "AttackRight",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 22 ) ],
+"loop": false,
+"name": "AttackUp",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "IdleLeft",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 13 ) ],
+"loop": true,
+"name": "IdleUp",
+"speed": 10.0
 } ]
 
 [sub_resource type="CircleShape2D" id=31]
@@ -1212,7 +1298,7 @@ position = Vector2( 65, -89 )
 tile_set = SubResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( 458774, 57, 0, 458775, 52, 0, 589823, 52, 0, 524288, 54, 0, 524291, 57, 0, 524294, 54, 0, 524297, 53, 0, 524300, 57, 0, 524311, 51, 0, 589836, 51, 0, 589837, 55, 0, 589845, 55, 0, 655361, 58, 0, 655372, 55, 0, 655383, 55, 0, 786431, 56, 0, 720909, 536870968, 0, 917505, 55, 0, 917517, 59, 0, 917522, 53, 0, 917524, 536870973, 0, 917525, 536870974, 0, 917527, 54, 0, 1048575, 536870971, 0, 1048589, 536870968, 0, 1048593, 56, 0, 1048600, 536870968, 0, 1114127, 536870972, 0, 1310719, 56, 0, 1245208, 59, 0, 1310729, 55, 0, 1441791, 58, 0, 1441809, 56, 0, 1441816, 536870968, 0, 1507348, 51, 0, 1572881, 58, 0 )
+tile_data = PoolIntArray( 458774, 57, 0, 458775, 52, 0, 589823, 52, 0, 524288, 54, 0, 524291, 57, 0, 524294, 54, 0, 524297, 53, 0, 524300, 57, 0, 524311, 51, 0, 589836, 51, 0, 589837, 55, 0, 589845, 55, 0, 655361, 58, 0, 655372, 55, 0, 655383, 55, 0, 786431, 56, 0, 720909, 536870968, 0, 917505, 55, 0, 917511, 64, 0, 917517, 59, 0, 917522, 53, 0, 917524, 536870973, 0, 917525, 536870974, 0, 917527, 54, 0, 1048575, 536870971, 0, 1048589, 536870968, 0, 1048593, 56, 0, 1048600, 536870968, 0, 1114127, 536870972, 0, 1310719, 56, 0, 1245208, 59, 0, 1310729, 55, 0, 1441791, 58, 0, 1441809, 56, 0, 1441816, 536870968, 0, 1507348, 51, 0, 1572881, 58, 0 )
 
 [node name="Character" type="KinematicBody2D" parent="."]
 position = Vector2( 422, 224 )
@@ -1222,7 +1308,7 @@ script = ExtResource( 1 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Character"]
 scale = Vector2( 0.015, 0.015 )
 frames = SubResource( 30 )
-animation = "MoveLeft"
+animation = "AttackUp"
 __meta__ = {
 "_edit_lock_": true
 }
@@ -1274,3 +1360,8 @@ range_layer_max = 1
 __meta__ = {
 "_edit_lock_": true
 }
+
+[connection signal="facing_direction_changed" from="Character" to="Character" method="_on_facing_direction_changed"]
+[connection signal="moving_direction_changed" from="Character" to="Character" method="_on_moving_direction_changed"]
+[connection signal="state_changed" from="Character" to="Character" method="_on_state_changed"]
+[connection signal="animation_finished" from="Character/AnimatedSprite" to="Character" method="_on_AnimatedSprite_animation_finished"]

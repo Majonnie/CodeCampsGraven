@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/UI/HUD/HUD_Mask.png" type="Texture" id=2]
@@ -17,6 +17,11 @@
 [ext_resource path="res://Scenes/InteractiveObjects/Coin/Coin.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Scenes/InteractiveObjects/Coin/HUD_Coin.png" type="Texture" id=16]
 [ext_resource path="res://Scenes/UI/HUD/HUD.gd" type="Script" id=17]
+[ext_resource path="res://Scenes/Buttons/Sprite/Arrow_Right.png" type="Texture" id=18]
+[ext_resource path="res://Scenes/Buttons/Sprite/Arrow_Down.png" type="Texture" id=19]
+[ext_resource path="res://Scenes/Buttons/Sprite/Arrow_Left.png" type="Texture" id=20]
+[ext_resource path="res://Scenes/Buttons/Sprite/Arrow_Up.png" type="Texture" id=21]
+[ext_resource path="res://Scenes/Buttons/Sprite/Interactiv_Button.png" type="Texture" id=22]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
@@ -1341,6 +1346,48 @@ text = "20"
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="ButtonRight" type="TouchScreenButton" parent="UI_Container/UI/HUD"]
+position = Vector2( 59, 300 )
+scale = Vector2( 2, 2 )
+normal = ExtResource( 18 )
+action = "ui_right"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ButtonDown" type="TouchScreenButton" parent="UI_Container/UI/HUD"]
+position = Vector2( 35, 320 )
+scale = Vector2( 2, 2 )
+normal = ExtResource( 19 )
+action = "ui_down"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ButtonLeft" type="TouchScreenButton" parent="UI_Container/UI/HUD"]
+position = Vector2( 9, 300 )
+scale = Vector2( 2, 2 )
+normal = ExtResource( 20 )
+action = "ui_left"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ButtonUp" type="TouchScreenButton" parent="UI_Container/UI/HUD"]
+position = Vector2( 35, 280 )
+scale = Vector2( 2, 2 )
+normal = ExtResource( 21 )
+action = "ui_up"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ButtonInteract" type="TouchScreenButton" parent="UI_Container/UI/HUD"]
+position = Vector2( 575, 300 )
+scale = Vector2( 2.5625, 2.5625 )
+normal = ExtResource( 22 )
+action = "ui_space"
 
 [node name="Coin" parent="." instance=ExtResource( 15 )]
 position = Vector2( 99, 217 )

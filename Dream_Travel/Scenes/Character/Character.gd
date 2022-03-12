@@ -5,6 +5,7 @@ onready var animated_sprite = get_node("AnimatedSprite")
 var speed = 200
 var direction = Vector2.ZERO
 
+
 func _process(_delta):
 	var __ = move_and_slide(direction * speed)
 	

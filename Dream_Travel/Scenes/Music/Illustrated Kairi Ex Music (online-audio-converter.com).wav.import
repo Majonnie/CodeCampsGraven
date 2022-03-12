@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Illustrated Kairi Ex Music (online-audio-converter.com).wav-225b0076b12627cc9d59d1dd035ed14b.sample"
+
+[deps]
+
+source_file="res://Scenes/Music/Illustrated Kairi Ex Music (online-audio-converter.com).wav"
+dest_files=[ "res://.import/Illustrated Kairi Ex Music (online-audio-converter.com).wav-225b0076b12627cc9d59d1dd035ed14b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

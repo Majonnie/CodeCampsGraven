@@ -25,3 +25,7 @@ func _input(_event):
 		Vector2.ZERO:
 			animated_sprite.stop()
 			animated_sprite.set_frame(0)
+
+
+func _on_Area2D_body_entered(body):
+	get_tree().change_scene("res://Scenes/Levels/Level.tscn")

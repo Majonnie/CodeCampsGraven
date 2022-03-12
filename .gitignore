@@ -1,0 +1,11 @@
+# Godot-specific ignores
+Dream_Travel/.import/
+Dream_Travel/export.cfg
+Dream_Travel/export_presets.cfg
+
+# Imported translations (automatically generated from CSV files)
+Dream_Travel/*.translation
+
+# Mono-specific ignores
+Dream_Travel/.mono/
+Dream_Travel/data_*/

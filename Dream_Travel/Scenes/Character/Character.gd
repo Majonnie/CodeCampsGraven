@@ -117,3 +117,23 @@ func _on_AnimatedSprite_frame_changed():
 
 func _on_Character_facing_direction_changed():
 	pass # Replace with function body.
+
+
+func _on_Level_body_entered(body) -> void:
+	get_tree().change_scene("res://Scenes/Levels/Level1.tscn")
+
+
+func _on_Level1_body_entered(body):
+	get_tree().change_scene("res://Scenes/Levels/Level2.tscn")
+
+
+func _on_Level2_body_entered(body):
+	get_tree().change_scene("res://Scenes/Levels/Level3.tscn")
+
+
+func _on_Level3_body_entered(body):
+	get_tree().change_scene("res://Scenes/Levels/Level4.tscn")
+
+
+func _on_Level4_body_entered(body):
+	get_tree().change_scene("res://Scenes/Levels/LevelBoss.tscn")

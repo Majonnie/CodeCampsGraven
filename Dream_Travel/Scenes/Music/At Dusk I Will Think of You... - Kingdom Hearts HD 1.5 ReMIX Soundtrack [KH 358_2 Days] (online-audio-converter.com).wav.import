@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/At Dusk I Will Think of You... - Kingdom Hearts HD 1.5 ReMIX Soundtrack [KH 358_2 Days] (online-audio-converter.com).wav-76e5620ed0fc7b155a8c836a6b985aea.sample"
+
+[deps]
+
+source_file="res://Scenes/Music/At Dusk I Will Think of You... - Kingdom Hearts HD 1.5 ReMIX Soundtrack [KH 358_2 Days] (online-audio-converter.com).wav"
+dest_files=[ "res://.import/At Dusk I Will Think of You... - Kingdom Hearts HD 1.5 ReMIX Soundtrack [KH 358_2 Days] (online-audio-converter.com).wav-76e5620ed0fc7b155a8c836a6b985aea.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

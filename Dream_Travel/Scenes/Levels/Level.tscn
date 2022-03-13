@@ -1194,6 +1194,16 @@ animations = [ {
 "name": "AttackUp",
 "speed": 10.0
 }, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "AttackLeft",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 26 ) ],
+"loop": true,
+"name": "IdleDown",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 28 ) ],
 "loop": true,
 "name": "IdleLeft",
@@ -1204,14 +1214,9 @@ animations = [ {
 "name": "IdleRight",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 11 ), ExtResource( 12 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 23 ) ],
 "loop": true,
-"name": "AttackLeft",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 9 ), ExtResource( 10 ) ],
-"loop": true,
-"name": "AttackDown",
+"name": "AttackRight",
 "speed": 10.0
 }, {
 "frames": [ ExtResource( 31 ) ],
@@ -1219,14 +1224,14 @@ animations = [ {
 "name": "IdleUp",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 26 ) ],
+"frames": [ ExtResource( 9 ), ExtResource( 10 ) ],
 "loop": true,
-"name": "IdleDown",
-"speed": 5.0
+"name": "AttackDown",
+"speed": 10.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 23 ) ],
+"frames": [ ExtResource( 8 ), ExtResource( 30 ) ],
 "loop": true,
-"name": "AttackRight",
+"name": "MoveRight",
 "speed": 10.0
 }, {
 "frames": [ ExtResource( 26 ), ExtResource( 27 ) ],
@@ -1234,19 +1239,14 @@ animations = [ {
 "name": "MoveDown",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 28 ), ExtResource( 29 ) ],
-"loop": true,
-"name": "MoveLeft",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 8 ), ExtResource( 30 ) ],
-"loop": true,
-"name": "MoveRight",
-"speed": 10.0
-}, {
 "frames": [ ExtResource( 31 ), ExtResource( 32 ) ],
 "loop": true,
 "name": "MoveUp",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 28 ), ExtResource( 29 ) ],
+"loop": true,
+"name": "MoveLeft",
 "speed": 5.0
 } ]
 

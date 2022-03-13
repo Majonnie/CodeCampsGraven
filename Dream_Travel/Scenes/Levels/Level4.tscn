@@ -644,7 +644,7 @@ points = PoolVector2Array( 23.2471, 26.6341, 3.94397, 26.6341, 3.94397, 4.30757,
 points = PoolVector2Array( 14.6595, 9.42363, 34.893, 12.447, 40.4746, 35.0061, 4.65912, 31.7502 )
 
 [sub_resource type="ConvexPolygonShape2D" id=28]
-points = PoolVector2Array( 0, 11.9692, 64, 12.8065, 64, 32, 0, 32 )
+points = PoolVector2Array( 0, 11.9692, 63.5602, 12.4299, 64, 32, 0, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=29]
 points = PoolVector2Array( 32, 23.2956, 1.40379, 23.2956, 1.40379, 2.13187, 32, 2.13187 )
@@ -662,7 +662,7 @@ points = PoolVector2Array( 55.0684, 48.5551, 5.99658, 41.8107, 12.2759, 10.1814,
 points = PoolVector2Array( 62.5319, 50.3807, 3.22711, 50.8458, 6.31677, 25.5321, 56.3189, 24.8344 )
 
 [sub_resource type="ConvexPolygonShape2D" id=23]
-points = PoolVector2Array( 64, 54.5052, 0, 56.8201, 0.616432, 0.483383, 64, 0.483383 )
+points = PoolVector2Array( 64, 43.8513, 0, 43.2725, 0.616432, 0.483383, 64, 0.483383 )
 
 [sub_resource type="ConvexPolygonShape2D" id=42]
 points = PoolVector2Array( 76.2827, 106.838, 83.2598, 106.838, 83.2598, 139.863, 76.2827, 139.863 )
@@ -686,7 +686,7 @@ points = PoolVector2Array( 2.05759, 0.525055, 6.94153, 0.525055, 6.94153, 94.482
 points = PoolVector2Array( 0, 0, 96, 0, 96, 7.76953, 0, 7.07184 )
 
 [sub_resource type="ConvexPolygonShape2D" id=27]
-points = PoolVector2Array( 0, 0, 63.1131, 0, 63.7546, 28.9392, 0, 27.7819 )
+points = PoolVector2Array( 0, 0, 63.1131, 0, 63.7545, 23.8936, 0.0971985, 23.8936 )
 
 [sub_resource type="ConvexPolygonShape2D" id=19]
 points = PoolVector2Array( 26.5638, 4.04158, 29.9978, 3.13342, 30.3208, 28.4898, 26.9514, 25.1665 )
@@ -1361,7 +1361,7 @@ points = PoolVector2Array( 96, 5.38863, 0.929901, 5.38863, 0.929901, 1.66753, 96
 points = PoolVector2Array( 32, 96, 26.5562, 94.4621, 25.8585, 2.13268, 32, 2.59779 )
 
 [sub_resource type="ConvexPolygonShape2D" id=47]
-points = PoolVector2Array( 32, 64, 0, 64, 0.288422, 1.51266, 32, 1.51266 )
+points = PoolVector2Array( 32, 41.6262, 0, 42.7836, 0.288422, 1.51266, 32, 1.51266 )
 
 [sub_resource type="ConvexPolygonShape2D" id=50]
 points = PoolVector2Array( 81.6318, 141.9, 29.6302, 74.803, 77.3066, 20.6147, 134.518, 74.5704 )
@@ -1387,7 +1387,7 @@ points = PoolVector2Array( 3.34396, 4.17908, 25.6705, 15.3423, 28.9264, 52.7968,
 [sub_resource type="StreamTexture" id=60]
 
 [sub_resource type="ConvexPolygonShape2D" id=49]
-points = PoolVector2Array( 32, 60.9907, 0, 64, 1.69058, 0, 32, 0 )
+points = PoolVector2Array( 31.7963, 45.0984, 0.546295, 46.2558, 1.69058, 0, 32, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=54]
 points = PoolVector2Array( 23.5336, 51.0276, 7.71893, 51.0276, 7.71893, 24.9799, 23.5336, 24.9799 )
@@ -1396,7 +1396,7 @@ points = PoolVector2Array( 23.5336, 51.0276, 7.71893, 51.0276, 7.71893, 24.9799,
 points = PoolVector2Array( 8.55087, 22.9544, 24.3655, 22.4893, 31.5396, 30.5188, 0, 30.5188 )
 
 [sub_resource type="ConvexPolygonShape2D" id=55]
-points = PoolVector2Array( 50.7002, 50.1845, 6.0472, 43.6726, 15.5825, 19.9507, 51.6305, 28.7882 )
+points = PoolVector2Array( 48.4491, 50.4445, 6.0472, 43.6726, 18, 15, 54.8148, 28.4537 )
 
 [sub_resource type="ConvexPolygonShape2D" id=56]
 points = PoolVector2Array( 25.9914, 18.5114, 4.82776, 19.6743, 4.82776, 13.1624, 20.1772, 8.97617 )
@@ -1860,26 +1860,6 @@ points = PoolVector2Array( 25.9914, 18.5114, 4.82776, 19.6743, 4.82776, 13.1624,
 
 [sub_resource type="SpriteFrames" id=62]
 animations = [ {
-"frames": [ ExtResource( 14 ), ExtResource( 12 ) ],
-"loop": true,
-"name": "MoveDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 16 ), ExtResource( 17 ) ],
-"loop": true,
-"name": "MoveLeft",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 29 ), ExtResource( 11 ) ],
-"loop": true,
-"name": "MoveRight",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 18 ), ExtResource( 19 ) ],
-"loop": true,
-"name": "MoveUp",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 13 ), ExtResource( 24 ) ],
 "loop": true,
 "name": "R_MoveRight",
@@ -1898,6 +1878,26 @@ animations = [ {
 "frames": [ ExtResource( 28 ), ExtResource( 25 ) ],
 "loop": true,
 "name": "R_MoveDown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "MoveDown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "MoveLeft",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 29 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "MoveRight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "MoveUp",
 "speed": 5.0
 } ]
 

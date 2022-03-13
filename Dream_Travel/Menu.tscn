@@ -3,7 +3,7 @@
 [ext_resource path="res://Menu.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Font/yoster.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Scenes/Music/Zelda- Great Fairy Fountain (Piano Etude) (online-audio-converter.com).wav" type="AudioStream" id=3]
-[ext_resource path="res://Scenes/Theme/RayTheme/Default/Button/FlatUI/kenneyUI.tres" type="Theme" id=4]
+[ext_resource path="res://Scenes/Theme/FlatUI/kenneyUI.tres" type="Theme" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 2 )

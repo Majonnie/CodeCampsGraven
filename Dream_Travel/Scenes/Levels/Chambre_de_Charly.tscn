@@ -800,26 +800,6 @@ points = PoolVector2Array( 85.9408, 48.0326, 5.00717, 49.428, 4.64206, 8.28482, 
 
 [sub_resource type="SpriteFrames" id=30]
 animations = [ {
-"frames": [ ExtResource( 11 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "MoveDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 13 ), ExtResource( 14 ) ],
-"loop": true,
-"name": "MoveLeft",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 25 ), ExtResource( 8 ) ],
-"loop": true,
-"name": "MoveRight",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 15 ), ExtResource( 16 ) ],
-"loop": true,
-"name": "MoveUp",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 10 ), ExtResource( 20 ) ],
 "loop": true,
 "name": "R_MoveRight",
@@ -838,6 +818,26 @@ animations = [ {
 "frames": [ ExtResource( 24 ), ExtResource( 21 ) ],
 "loop": true,
 "name": "R_MoveDown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "MoveDown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "MoveLeft",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 25 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "MoveRight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "MoveUp",
 "speed": 5.0
 } ]
 

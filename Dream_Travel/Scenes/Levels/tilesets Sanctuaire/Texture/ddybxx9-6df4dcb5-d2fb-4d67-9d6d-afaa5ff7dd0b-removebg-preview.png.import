@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/ddybxx9-6df4dcb5-d2fb-4d67-9d6d-afaa5ff7dd0b-removebg-preview.png-04242ee29bfdb2f0a0cb57eb25702ad5.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Scenes/Levels/tilesets Sanctuaire/Texture/ddybxx9-6df4dcb5-d2fb-4d67-9d6d-afaa5ff7dd0b-removebg-preview.png"
+dest_files=[ "res://.import/ddybxx9-6df4dcb5-d2fb-4d67-9d6d-afaa5ff7dd0b-removebg-preview.png-04242ee29bfdb2f0a0cb57eb25702ad5.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

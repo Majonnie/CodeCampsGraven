@@ -15,9 +15,7 @@
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_A_L.png" type="Texture" id=13]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_B_B.png" type="Texture" id=14]
 [ext_resource path="res://Scenes/UI/HUD/HUD.png" type="Texture" id=15]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_t_B.png" type="Texture" id=16]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_F.png" type="Texture" id=17]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_t_F.png" type="Texture" id=18]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_L.png" type="Texture" id=19]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_A_F.png" type="Texture" id=20]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_B_F.png" type="Texture" id=21]
@@ -27,6 +25,8 @@
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_B_R.png" type="Texture" id=25]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_A_R.png" type="Texture" id=26]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_B_L.png" type="Texture" id=27]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_F.png" type="Texture" id=28]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_B.png" type="Texture" id=29]
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
 points = PoolVector2Array( 31.2021, 32, 25.3413, 32, 25.6204, 1.11185, 32, 1.9491 )
@@ -1858,12 +1858,32 @@ points = PoolVector2Array( 25.9914, 18.5114, 4.82776, 19.6743, 4.82776, 13.1624,
 
 [sub_resource type="SpriteFrames" id=62]
 animations = [ {
+"frames": [ ExtResource( 28 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "MoveDown",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "MoveLeft",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "MoveRight",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 29 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "MoveUp",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 24 ) ],
 "loop": true,
 "name": "IdleLeft",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 16 ) ],
+"frames": [ ExtResource( 29 ) ],
 "loop": true,
 "name": "IdleUp",
 "speed": 5.0
@@ -1871,9 +1891,9 @@ animations = [ {
 "frames": [ ExtResource( 13 ), ExtResource( 27 ) ],
 "loop": true,
 "name": "AttackLeft",
-"speed": 5.0
+"speed": 10.0
 }, {
-"frames": [ ExtResource( 18 ) ],
+"frames": [ ExtResource( 28 ) ],
 "loop": true,
 "name": "IdleDown",
 "speed": 5.0
@@ -1886,37 +1906,17 @@ animations = [ {
 "frames": [ ExtResource( 26 ), ExtResource( 25 ) ],
 "loop": true,
 "name": "AttackRight",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 20 ), ExtResource( 21 ) ],
 "loop": true,
 "name": "AttackDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 18 ), ExtResource( 17 ) ],
-"loop": true,
-"name": "MoveDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 24 ), ExtResource( 19 ) ],
-"loop": true,
-"name": "MoveLeft",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 23 ), ExtResource( 11 ) ],
-"loop": true,
-"name": "MoveRight",
 "speed": 10.0
-}, {
-"frames": [ ExtResource( 16 ), ExtResource( 12 ) ],
-"loop": true,
-"name": "MoveUp",
-"speed": 5.0
 }, {
 "frames": [ ExtResource( 22 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "AttackUp",
-"speed": 5.0
+"speed": 10.0
 } ]
 
 [sub_resource type="CircleShape2D" id=63]

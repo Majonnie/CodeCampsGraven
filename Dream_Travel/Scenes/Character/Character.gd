@@ -103,7 +103,7 @@ func _on_state_changed():   #fonction qui va être appelé a chaque fois que sta
 	_update_animation()
 
 func _on_facing_direction_changed():   #fonction qui va être appelé a chaque fois que la direction de la caméra change de value 
-	pass # Replace with function body.
+	_update_animation()
 
 
 func _on_moving_direction_changed() -> void:

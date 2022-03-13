@@ -18,7 +18,6 @@ config/icon="res://icon.png"
 
 GAME="*res://Autoload/Game.gd"
 EVENTS="*res://Autoload/Events.gd"
-MOVEMENT="*res://Autoload/Movement.gd"
 
 [display]
 

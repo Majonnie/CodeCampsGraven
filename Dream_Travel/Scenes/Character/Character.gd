@@ -109,7 +109,6 @@ func _on_facing_direction_changed():   #fonction qui va être appelé a chaque f
 func _on_moving_direction_changed() -> void:
 	if moving_direction == Vector2.ZERO or moving_direction == facing_direction:
 		return 
-	 
 
 
 func _on_AnimatedSprite_frame_changed():

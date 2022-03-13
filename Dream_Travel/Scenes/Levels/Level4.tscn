@@ -1883,6 +1883,21 @@ animations = [ {
 "name": "IdleLeft",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 26 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "AttackRight",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "AttackUp",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "AttackDown",
+"speed": 10.0
+}, {
 "frames": [ ExtResource( 29 ) ],
 "loop": true,
 "name": "IdleUp",
@@ -1902,21 +1917,6 @@ animations = [ {
 "loop": true,
 "name": "IdleRight",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 26 ), ExtResource( 25 ) ],
-"loop": true,
-"name": "AttackRight",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 20 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "AttackDown",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 22 ), ExtResource( 14 ) ],
-"loop": true,
-"name": "AttackUp",
-"speed": 10.0
 } ]
 
 [sub_resource type="CircleShape2D" id=63]

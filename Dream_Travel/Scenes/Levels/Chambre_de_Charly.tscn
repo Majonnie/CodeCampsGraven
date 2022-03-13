@@ -844,8 +844,8 @@ animations = [ {
 [sub_resource type="CircleShape2D" id=31]
 radius = 18.7142
 
-[sub_resource type="RectangleShape2D" id=29]
-extents = Vector2( 4, 28.75 )
+[sub_resource type="RectangleShape2D" id=32]
+extents = Vector2( 15, 22.5 )
 
 [node name="Chambre de Charly" type="Node2D"]
 __meta__ = {
@@ -934,14 +934,16 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 141, 94 )
-shape = SubResource( 29 )
-
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( 0, -1 )
 stream = ExtResource( 17 )
 autoplay = true
 attenuation = 14.9285
+
+[node name="Level" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level"]
+position = Vector2( 166, 97 )
+shape = SubResource( 32 )
+
+[connection signal="body_entered" from="Level" to="Charly" method="_on_Level_body_entered"]

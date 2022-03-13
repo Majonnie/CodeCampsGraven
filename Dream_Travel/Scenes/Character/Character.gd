@@ -27,5 +27,21 @@ func _input(_event):
 			animated_sprite.set_frame(0)
 
 
-func _on_Area2D_body_entered(body):
-	get_tree().change_scene("res://Scenes/Levels/Level.tscn")
+func _on_Level_body_entered(body) -> void:
+	get_tree().change_scene("res://Scenes/Levels/Level1.tscn")
+
+
+func _on_Level1_body_entered(body):
+	get_tree().change_scene("res://Scenes/Levels/Level2.tscn")
+
+
+func _on_Level2_body_entered(body):
+	get_tree().change_scene("res://Scenes/Levels/Level3.tscn")
+
+
+func _on_Level3_body_entered(body):
+	get_tree().change_scene("res://Scenes/Levels/Level4.tscn")
+
+
+func _on_Level4_body_entered(body):
+	get_tree().change_scene("res://Scenes/Levels/LevelBoss.tscn")

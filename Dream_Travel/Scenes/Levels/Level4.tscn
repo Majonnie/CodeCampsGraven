@@ -1883,6 +1883,21 @@ animations = [ {
 "name": "IdleLeft",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 13 ), ExtResource( 27 ) ],
+"loop": true,
+"name": "AttackLeft",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 23 ) ],
+"loop": true,
+"name": "IdleRight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 28 ) ],
+"loop": true,
+"name": "IdleDown",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 26 ), ExtResource( 25 ) ],
 "loop": true,
 "name": "AttackRight",
@@ -1901,21 +1916,6 @@ animations = [ {
 "frames": [ ExtResource( 29 ) ],
 "loop": true,
 "name": "IdleUp",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 13 ), ExtResource( 27 ) ],
-"loop": true,
-"name": "AttackLeft",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 28 ) ],
-"loop": true,
-"name": "IdleDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 23 ) ],
-"loop": true,
-"name": "IdleRight",
 "speed": 5.0
 } ]
 

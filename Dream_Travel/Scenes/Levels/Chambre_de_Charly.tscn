@@ -827,51 +827,6 @@ animations = [ {
 "name": "MoveUp",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 10 ) ],
-"loop": true,
-"name": "IdleLeft",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 15 ) ],
-"loop": true,
-"name": "IdleUp",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 24 ), ExtResource( 26 ) ],
-"loop": true,
-"name": "AttackLeft",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 9 ) ],
-"loop": true,
-"name": "IdleDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 14 ) ],
-"loop": true,
-"name": "IdleRight",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 32 ), ExtResource( 25 ) ],
-"loop": false,
-"name": "AttackRight",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 27 ), ExtResource( 31 ) ],
-"loop": false,
-"name": "AttackDown",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 22 ), ExtResource( 23 ) ],
-"loop": true,
-"name": "R_MoveLeft",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 18 ), ExtResource( 19 ) ],
-"loop": true,
-"name": "R_MoveUp",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 21 ), ExtResource( 20 ) ],
 "loop": true,
 "name": "R_MoveDown",
@@ -882,9 +837,54 @@ animations = [ {
 "name": "R_MoveRight",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 18 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "R_MoveUp",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "R_MoveLeft",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "IdleLeft",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "AttackLeft",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ) ],
+"loop": true,
+"name": "IdleRight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "IdleDown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 25 ) ],
+"loop": false,
+"name": "AttackRight",
+"speed": 10.0
+}, {
 "frames": [ ExtResource( 29 ), ExtResource( 28 ) ],
 "loop": false,
 "name": "AttackUp",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 27 ), ExtResource( 31 ) ],
+"loop": false,
+"name": "AttackDown",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 15 ) ],
+"loop": true,
+"name": "IdleUp",
 "speed": 10.0
 } ]
 

@@ -1,24 +1,24 @@
-[gd_scene load_steps=98 format=2]
+[gd_scene load_steps=100 format=2]
 
 [ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_R.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_F.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Music/majoras-mask-song-of-healing (online-audio-converter.com).wav" type="AudioStream" id=3]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_L.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_F.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/Levels/Tilesets/Dungeon_Tileset.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/Levels/Tilesets/Dungeon.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/UI/HUD/HUD.png" type="Texture" id=7]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_F.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_B.png" type="Texture" id=8]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_L.png" type="Texture" id=9]
-[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_F.png" type="Texture" id=10]
-[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_B.png" type="Texture" id=11]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_F.png" type="Texture" id=12]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_R.png" type="Texture" id=13]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_B.png" type="Texture" id=14]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_B.png" type="Texture" id=15]
-[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_R.png" type="Texture" id=16]
-[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_B.png" type="Texture" id=17]
-[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_R.png" type="Texture" id=18]
-[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_F.png" type="Texture" id=19]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_L.png" type="Texture" id=10]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_R.png" type="Texture" id=11]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_R.png" type="Texture" id=12]
+[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_B.png" type="Texture" id=13]
+[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_R.png" type="Texture" id=14]
+[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_B.png" type="Texture" id=15]
+[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_B.png" type="Texture" id=16]
+[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_R.png" type="Texture" id=17]
+[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_F.png" type="Texture" id=18]
+[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_F.png" type="Texture" id=19]
 [ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_L.png" type="Texture" id=20]
 [ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_L.png" type="Texture" id=21]
 
@@ -3624,27 +3624,7 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 
 [sub_resource type="SpriteFrames" id=105]
 animations = [ {
-"frames": [ ExtResource( 16 ), ExtResource( 18 ) ],
-"loop": true,
-"name": "R_MoveRight",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 17 ), ExtResource( 11 ) ],
-"loop": true,
-"name": "R_MoveUp",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 20 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "R_MoveLeft",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 10 ), ExtResource( 19 ) ],
-"loop": true,
-"name": "R_MoveDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 12 ), ExtResource( 8 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "MoveDown",
 "speed": 5.0
@@ -3659,14 +3639,60 @@ animations = [ {
 "name": "MoveRight",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 14 ), ExtResource( 15 ) ],
+"frames": [ ExtResource( 8 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "MoveUp",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "R_MoveRight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "R_MoveUp",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "R_MoveLeft",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "R_MoveDown",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=106]
+animations = [ {
+"frames": [ null ],
+"loop": true,
+"name": "MoveDown",
+"speed": 5.0
+}, {
+"frames": [ null, null ],
+"loop": true,
+"name": "MoveLeft",
+"speed": 5.0
+}, {
+"frames": [ null, null ],
+"loop": true,
+"name": "MoveRight",
+"speed": 10.0
+}, {
+"frames": [ null ],
 "loop": true,
 "name": "MoveUp",
 "speed": 5.0
 } ]
 
-[sub_resource type="CircleShape2D" id=106]
-radius = 18.7142
+[sub_resource type="RectangleShape2D" id=107]
+extents = Vector2( 10, 3.66667 )
+
+[sub_resource type="RectangleShape2D" id=108]
+extents = Vector2( 10, 3.5 )
 
 [node name="Level1" type="YSort"]
 __meta__ = {
@@ -3688,11 +3714,69 @@ format = 1
 tile_data = PoolIntArray( -458698, 57, 0, -458697, 60, 0, -393184, 52, 0, -393183, 54, 0, -393180, 57, 0, -393174, 53, 0, -393171, 57, 0, -393160, 55, 0, -327626, 55, 0, -327624, 59, 0, -262137, 57, 0, -262132, 54, 0, -262123, 54, 0, -262117, 57, 0, -262109, 51, 0, -262100, 58, 0, -196591, 51, 0, -196568, 55, 0, -196562, 536870968, 0, -131064, 55, 0, -131049, 55, 0, -131043, 55, 0, 46, 59, 0, 51, 53, 0, 56, 54, 0, 65540, 56, 0, 65552, 55, 0, 65562, 55, 0, 131118, 536870968, 0, 131122, 56, 0, 131129, 536870968, 0, 196656, 536870972, 0, 262150, 536870968, 0, 327712, 56, 0, 327714, 58, 0, 327737, 59, 0, 393220, 56, 0, 393254, 55, 0, 393257, 55, 0, 393261, 51, 0, 458774, 57, 0, 458775, 52, 0, 589823, 52, 0, 524288, 54, 0, 524291, 57, 0, 524297, 53, 0, 524300, 57, 0, 524311, 51, 0, 524338, 56, 0, 524345, 536870968, 0, 589836, 51, 0, 589837, 55, 0, 589845, 55, 0, 589877, 51, 0, 655361, 58, 0, 655372, 55, 0, 655383, 55, 0, 655410, 58, 0, 786431, 56, 0, 720909, 536870968, 0, 917505, 55, 0, 917517, 59, 0, 917522, 53, 0, 917524, 536870973, 0, 917525, 536870974, 0, 917527, 54, 0, 1048575, 536870971, 0, 1048589, 536870968, 0, 1048593, 56, 0, 1048600, 536870968, 0, 1114127, 536870972, 0, 1310719, 56, 0, 1245208, 59, 0, 1310729, 55, 0, 1441791, 58, 0, 1441809, 56, 0, 1441816, 536870968, 0, 1507348, 51, 0, 1572881, 58, 0 )
 
 [node name="Salle vide" type="TileMap" parent="."]
-visible = false
 position = Vector2( 64, 157 )
 tile_set = SubResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
+
+[node name="Character" type="KinematicBody2D" parent="."]
+position = Vector2( 953, 238 )
+scale = Vector2( 0.5, 0.5 )
+z_index = 1
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="Character"]
+scale = Vector2( 0.015, 0.015 )
+frames = SubResource( 105 )
+animation = "MoveLeft"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Character"]
+visible = false
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 106 )
+animation = "MoveLeft"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Camera2D" type="Camera2D" parent="Character"]
+zoom = Vector2( 40, 40 )
+limit_left = 0
+limit_top = 0
+limit_right = 1024
+limit_bottom = 606
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+editor_draw_limits = true
+editor_draw_drag_margin = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Character"]
+position = Vector2( -1.33337, 29 )
+shape = SubResource( 107 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Camera2D2" type="Camera2D" parent="Character"]
+current = true
+zoom = Vector2( 0.4, 0.4 )
+limit_left = 0
+limit_top = 0
+limit_right = 1024
+limit_bottom = 606
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+editor_draw_limits = true
+editor_draw_drag_margin = true
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="UI_Container" type="CanvasLayer" parent="."]
 
@@ -3721,36 +3805,10 @@ stream = ExtResource( 3 )
 volume_db = -12.0
 autoplay = true
 
-[node name="Charly" type="KinematicBody2D" parent="."]
-position = Vector2( 156, 501 )
-scale = Vector2( 0.75, 0.75 )
-script = ExtResource( 1 )
+[node name="Level1" type="Area2D" parent="."]
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Charly"]
-scale = Vector2( 0.015, 0.015 )
-frames = SubResource( 105 )
-animation = "MoveLeft"
-__meta__ = {
-"_edit_lock_": true
-}
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level1"]
+position = Vector2( 399, 404 )
+shape = SubResource( 108 )
 
-[node name="Camera2D" type="Camera2D" parent="Charly"]
-current = true
-zoom = Vector2( 0.8, 0.8 )
-limit_left = 0
-limit_top = 0
-limit_right = 1024
-limit_bottom = 606
-drag_margin_h_enabled = true
-drag_margin_v_enabled = true
-smoothing_enabled = true
-editor_draw_limits = true
-editor_draw_drag_margin = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Charly"]
-visible = false
-position = Vector2( 0, 4 )
-shape = SubResource( 106 )
+[connection signal="body_entered" from="Level1" to="Character" method="_on_Level1_body_entered"]

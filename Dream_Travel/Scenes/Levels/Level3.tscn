@@ -1,4 +1,4 @@
-[gd_scene load_steps=256 format=2]
+[gd_scene load_steps=248 format=2]
 
 [ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_R.png" type="Texture" id=2]
@@ -15,16 +15,7 @@
 [ext_resource path="res://Scenes/Levels/Tilesets/dungeonDecoration_0.png" type="Texture" id=13]
 [ext_resource path="res://Scenes/Levels/Tilesets/waterLavaAcid_.png" type="Texture" id=14]
 [ext_resource path="res://Scenes/Levels/Tilesets/dungeonDecoration_0 [redCarpet].png" type="Texture" id=15]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_F.png" type="Texture" id=16]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_R.png" type="Texture" id=17]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_B.png" type="Texture" id=18]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_B.png" type="Texture" id=19]
-[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_R.png" type="Texture" id=20]
-[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_B.png" type="Texture" id=21]
-[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_R.png" type="Texture" id=22]
-[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_F.png" type="Texture" id=23]
-[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_L.png" type="Texture" id=24]
-[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_L.png" type="Texture" id=25]
+[ext_resource path="res://Scenes/Music/undertale-ost-fallen-down-slowed-reverb (online-audio-converter.com).wav" type="AudioStream" id=16]
 
 [sub_resource type="ConvexPolygonShape2D" id=108]
 points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
@@ -7289,6 +7280,9 @@ animations = [ {
 [sub_resource type="CircleShape2D" id=374]
 radius = 18.7142
 
+[sub_resource type="RectangleShape2D" id=373]
+extents = Vector2( 11.25, 6 )
+
 [node name="Level" type="YSort"]
 position = Vector2( -110, -375 )
 
@@ -7411,7 +7405,39 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Charly"]
-visible = false
-position = Vector2( 0, 4 )
-shape = SubResource( 374 )
+[node name="UI_Container" type="CanvasLayer" parent="."]
+
+[node name="UI" type="Control" parent="UI_Container"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="HUD" type="TextureRect" parent="UI_Container/UI"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 143.0
+margin_bottom = 45.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light2D" type="Light2D" parent="UI_Container/UI/HUD"]
+position = Vector2( 69, 11 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 65, -89 )
+stream = ExtResource( 16 )
+volume_db = -12.0
+autoplay = true
+
+[node name="Level3" type="Area2D" parent="."]
+position = Vector2( 130, 91 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level3"]
+position = Vector2( 783, 882 )
+shape = SubResource( 373 )
+
+[connection signal="body_entered" from="Level3" to="Character" method="_on_Level3_body_entered"]

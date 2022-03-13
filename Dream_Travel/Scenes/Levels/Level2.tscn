@@ -1,15 +1,15 @@
-[gd_scene load_steps=118 format=2]
+[gd_scene load_steps=109 format=2]
 
 [ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_R.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Character/Sprites/SpriteLeft2.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Levels/Tilesets/Dungeon_Tileset.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/Levels/Tilesets/Dungeon.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/UI/HUD/HUD.png" type="Texture" id=5]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_L.png" type="Texture" id=6]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_F.png" type="Texture" id=7]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_L.png" type="Texture" id=8]
-[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_F.png" type="Texture" id=9]
-[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_B.png" type="Texture" id=10]
+[ext_resource path="res://Scenes/Character/Sprites/SpriteFront.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/Character/Sprites/SpriteBack.png" type="Texture" id=7]
+[ext_resource path="res://Scenes/Character/Sprites/SpriteRight.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/Character/Sprites/SpriteRight2.png" type="Texture" id=9]
+[ext_resource path="res://Scenes/Character/Sprites/SpriteLeft.png" type="Texture" id=10]
 [ext_resource path="res://Scenes/Music/bleach-nothing-can-be-explained-non-vocal.wav" type="AudioStream" id=11]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_F.png" type="Texture" id=12]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_R.png" type="Texture" id=13]
@@ -3876,24 +3876,27 @@ animations = [ {
 "name": "MoveDown",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 8 ) ],
+"frames": [ ExtResource( 10 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "MoveLeft",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 13 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 8 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "MoveRight",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 14 ), ExtResource( 15 ) ],
+"frames": [ ExtResource( 7 ) ],
 "loop": true,
 "name": "MoveUp",
 "speed": 5.0
 } ]
 
-[sub_resource type="CircleShape2D" id=210]
-radius = 18.7142
+[sub_resource type="RectangleShape2D" id=210]
+extents = Vector2( 6, 2.33334 )
+
+[sub_resource type="RectangleShape2D" id=211]
+extents = Vector2( 13, 2.5 )
 
 [node name="Level" type="YSort"]
 position = Vector2( -110, -375 )
@@ -3933,6 +3936,56 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 2424888, 210, 0, 2424889, 210, 0, 2424891, 210, 0, 2424892, 210, 0, 2883643, 201, 0, 2949179, 210, 0, 2949180, 210, 0, 3014701, 204, 0, 3014715, 210, 0, 3014716, 210, 0, 3080237, 210, 0, 3080238, 210, 0, 3080251, 210, 0, 3080252, 210, 0, 3211276, 210, 0, 3276811, 210, 0, 3342356, 210, 0, 3342357, 210, 0, 3407892, 210, 0, 3407893, 210, 0, 3538955, 204, 0, 3538970, 210, 0, 3538971, 210, 0, 3538982, 201, 0, 3604491, 210, 0, 3604492, 210, 0, 3604506, 210, 0, 3604507, 210, 0, 3604518, 210, 0, 3604519, 210, 0, 3670042, 210, 0, 3670043, 210, 0, 3670054, 210, 0, 3670055, 210, 0, 3670063, 204, 0, 3735564, 210, 0, 3735577, 210, 0, 3735578, 210, 0, 3735599, 210, 0, 3735600, 210, 0, 3997742, 210, 0, 3997743, 210, 0, 4128794, 210, 0, 4128795, 210, 0 )
 
+[node name="Character" type="KinematicBody2D" parent="."]
+position = Vector2( 1009, 633 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Character"]
+scale = Vector2( 0.35, 0.35 )
+frames = SubResource( 209 )
+animation = "MoveLeft"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Camera2D" type="Camera2D" parent="Character"]
+limit_left = 0
+limit_top = 0
+limit_right = 1024
+limit_bottom = 606
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+editor_draw_limits = true
+editor_draw_drag_margin = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Character"]
+position = Vector2( -0.666626, 20.3333 )
+shape = SubResource( 210 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Camera2D2" type="Camera2D" parent="Character"]
+current = true
+zoom = Vector2( 0.4, 0.4 )
+limit_left = 0
+limit_top = 0
+limit_right = 1024
+limit_bottom = 606
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+editor_draw_limits = true
+editor_draw_drag_margin = true
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="UI_Container" type="CanvasLayer" parent="."]
 
 [node name="UI" type="Control" parent="UI_Container"]
@@ -3957,39 +4010,13 @@ position = Vector2( 69, 11 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 11 )
-volume_db = 16.0
+volume_db = 5.0
 autoplay = true
 
-[node name="Charly" type="KinematicBody2D" parent="."]
-position = Vector2( 156, 501 )
-scale = Vector2( 0.75, 0.75 )
-script = ExtResource( 1 )
+[node name="Level2" type="Area2D" parent="."]
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Charly"]
-scale = Vector2( 0.015, 0.015 )
-frames = SubResource( 209 )
-animation = "MoveLeft"
-__meta__ = {
-"_edit_lock_": true
-}
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level2"]
+position = Vector2( 346, 654 )
+shape = SubResource( 211 )
 
-[node name="Camera2D" type="Camera2D" parent="Charly"]
-current = true
-zoom = Vector2( 0.8, 0.8 )
-limit_left = 0
-limit_top = 0
-limit_right = 1024
-limit_bottom = 606
-drag_margin_h_enabled = true
-drag_margin_v_enabled = true
-smoothing_enabled = true
-editor_draw_limits = true
-editor_draw_drag_margin = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Charly"]
-visible = false
-position = Vector2( 0, 4 )
-shape = SubResource( 210 )
+[connection signal="body_entered" from="Level2" to="Character" method="_on_Level2_body_entered"]

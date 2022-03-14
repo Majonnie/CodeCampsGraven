@@ -3635,25 +3635,35 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 
 [sub_resource type="SpriteFrames" id=111]
 animations = [ {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "IdleLeft",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 20 ), ExtResource( 21 ) ],
 "loop": true,
 "name": "AttackLeft",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 2 ) ],
+"frames": [ ExtResource( 16 ), ExtResource( 15 ) ],
 "loop": true,
-"name": "IdleDown",
-"speed": 5.0
+"name": "AttackUp",
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 11 ) ],
 "loop": true,
 "name": "IdleRight",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 10 ) ],
+"frames": [ ExtResource( 2 ) ],
 "loop": true,
-"name": "IdleLeft",
+"name": "IdleDown",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "AttackRight",
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
@@ -3663,16 +3673,6 @@ animations = [ {
 "frames": [ ExtResource( 18 ), ExtResource( 19 ) ],
 "loop": true,
 "name": "AttackDown",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 17 ), ExtResource( 14 ) ],
-"loop": true,
-"name": "AttackRight",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 16 ), ExtResource( 15 ) ],
-"loop": true,
-"name": "AttackUp",
 "speed": 10.0
 }, {
 "frames": [ ExtResource( 2 ), ExtResource( 4 ) ],

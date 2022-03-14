@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://Scenes/UI/HUD/HUD_Mask.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Levels/Tileset Charly Room/Interior general.PNG" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_F.png" type="Texture" id=8]
 [ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_F.png" type="Texture" id=9]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_B_R.png" type="Texture" id=10]
+[ext_resource path="res://Scenes/Dialogue/DialogBox.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scenes/UI/HUD/HUD.png" type="Texture" id=12]
 [ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_L.png" type="Texture" id=13]
 [ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_R.png" type="Texture" id=14]
@@ -806,25 +807,35 @@ points = PoolVector2Array( 81.5277, 60.8936, 5.71753, 64.3658, 4.64206, 8.28482,
 
 [sub_resource type="SpriteFrames" id=35]
 animations = [ {
+"frames": [ ExtResource( 13 ) ],
+"loop": true,
+"name": "IdleLeft",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 23 ), ExtResource( 24 ) ],
 "loop": true,
 "name": "AttackLeft",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 9 ), ExtResource( 8 ) ],
+"frames": [ ExtResource( 9 ) ],
 "loop": true,
-"name": "IdleDown",
-"speed": 5.0
+"name": "AttackUp",
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 14 ), ExtResource( 16 ) ],
 "loop": true,
 "name": "IdleRight",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 13 ) ],
+"frames": [ ExtResource( 9 ), ExtResource( 8 ) ],
 "loop": true,
-"name": "IdleLeft",
+"name": "IdleDown",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "AttackRight",
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 15 ) ],
 "loop": true,
@@ -834,16 +845,6 @@ animations = [ {
 "frames": [ ExtResource( 21 ), ExtResource( 22 ) ],
 "loop": true,
 "name": "AttackDown",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 20 ), ExtResource( 10 ) ],
-"loop": true,
-"name": "AttackRight",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 9 ) ],
-"loop": true,
-"name": "AttackUp",
 "speed": 10.0
 }, {
 "frames": [ ExtResource( 13 ), ExtResource( 25 ) ],
@@ -908,7 +909,7 @@ __meta__ = {
 
 [node name="Camera2D" type="Camera2D" parent="Character"]
 current = true
-zoom = Vector2( 0.4, 0.4 )
+zoom = Vector2( 0.6, 0.6 )
 limit_left = 0
 limit_top = 0
 limit_right = 551
@@ -1054,6 +1055,12 @@ position = Vector2( 575, 300 )
 scale = Vector2( 2.5625, 2.5625 )
 normal = ExtResource( 27 )
 action = "ui_accept"
+
+[node name="Control" parent="." instance=ExtResource( 11 )]
+margin_left = 34.0
+margin_top = 270.0
+margin_right = 674.0
+margin_bottom = 633.0
 
 [connection signal="facing_direction_changed" from="Character" to="Character" method="_on_facing_direction_changed"]
 [connection signal="state_changed" from="Character" to="Character" method="_on_state_changed"]

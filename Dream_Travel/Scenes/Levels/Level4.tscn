@@ -1,4 +1,4 @@
-[gd_scene load_steps=103 format=2]
+[gd_scene load_steps=104 format=2]
 
 [ext_resource path="res://Scenes/Levels/tilesets Sanctuaire/Texture/ddybxx9-6df4dcb5-d2fb-4d67-9d6d-afaa5ff7dd0b-removebg-preview.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/UI/HUD/HUD_Mask.png" type="Texture" id=2]
@@ -38,6 +38,7 @@
 [ext_resource path="res://Scenes/UI/Font/Minecraft.ttf" type="DynamicFontData" id=36]
 [ext_resource path="res://Scenes/InteractiveObjects/Coin/HUD_Coin.png" type="Texture" id=37]
 [ext_resource path="res://Scenes/UI/HUD/HUD_Damage (64x64).png" type="Texture" id=38]
+[ext_resource path="res://Scenes/InteractiveObjects/Coin/Coin.tscn" type="PackedScene" id=39]
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
 points = PoolVector2Array( 31.2021, 32, 25.3413, 32, 25.6204, 1.11185, 32, 1.9491 )
@@ -1930,8 +1931,8 @@ animations = [ {
 "speed": 10.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=68]
-extents = Vector2( 6.83333, 2.10423 )
+[sub_resource type="CircleShape2D" id=68]
+radius = 20.0
 
 [sub_resource type="RectangleShape2D" id=64]
 extents = Vector2( 9.75, 37.5 )
@@ -1995,7 +1996,7 @@ tile_data = PoolIntArray( 0, 536870927, 0, 4, 5, 0, 7, 5, 0, 65558, 536870917, 0
 
 [node name="Character" type="KinematicBody2D" parent="."]
 position = Vector2( 160, 494 )
-scale = Vector2( 0.35, 0.35 )
+scale = Vector2( 0.55, 0.55 )
 script = ExtResource( 5 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Character"]
@@ -2023,7 +2024,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Character"]
-position = Vector2( 0, 21.3333 )
+position = Vector2( 0, 5.71423 )
 shape = SubResource( 68 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
@@ -2154,6 +2155,9 @@ position = Vector2( 575, 300 )
 scale = Vector2( 2.5625, 2.5625 )
 normal = ExtResource( 31 )
 action = "ui_accept"
+
+[node name="Coin1" parent="." instance=ExtResource( 39 )]
+position = Vector2( 538, 312 )
 
 [connection signal="facing_direction_changed" from="Character" to="Character" method="_on_Character_facing_direction_changed"]
 [connection signal="state_changed" from="Character" to="Character" method="_on_state_changed"]

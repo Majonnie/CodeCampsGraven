@@ -3,7 +3,7 @@
 [ext_resource path="res://Scenes/UI/HUD/HUD_Mask.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Levels/Tileset Charly Room/Interior general.PNG" type="Texture" id=2]
 [ext_resource path="res://Scenes/Levels/Tileset Charly Room/Trainer Tower interior.png" type="Texture" id=3]
-[ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=4]
+[ext_resource path="res://Scenes/Levels/Reality.gd" type="Script" id=4]
 [ext_resource path="res://Scenes/Levels/Tileset Charly Room/interior.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/Levels/Tileset Charly Room/bed.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/Levels/Tileset Charly Room/Museum interior.PNG" type="Texture" id=7]
@@ -829,15 +829,15 @@ animations = [ {
 "name": "MoveUp",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 21 ), ExtResource( 22 ) ],
+"frames": [ ExtResource( 19 ), ExtResource( 18 ) ],
 "loop": true,
-"name": "AttackDown",
+"name": "AttackUp",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 15 ) ],
+"frames": [ ExtResource( 23 ), ExtResource( 24 ) ],
 "loop": true,
-"name": "IdleUp",
-"speed": 5.0
+"name": "AttackLeft",
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 9 ) ],
 "loop": true,
@@ -849,11 +849,6 @@ animations = [ {
 "name": "IdleLeft",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 23 ), ExtResource( 24 ) ],
-"loop": true,
-"name": "AttackLeft",
-"speed": 10.0
-}, {
 "frames": [ ExtResource( 14 ) ],
 "loop": true,
 "name": "IdleRight",
@@ -864,9 +859,14 @@ animations = [ {
 "name": "AttackRight",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 19 ), ExtResource( 18 ) ],
+"frames": [ ExtResource( 15 ) ],
 "loop": true,
-"name": "AttackUp",
+"name": "IdleUp",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "AttackDown",
 "speed": 10.0
 } ]
 

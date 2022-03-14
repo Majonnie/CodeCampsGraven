@@ -1,4 +1,4 @@
-[gd_scene load_steps=131 format=2]
+[gd_scene load_steps=132 format=2]
 
 [ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Buttons/Sprite/Arrow_Up.png" type="Texture" id=2]
@@ -31,6 +31,7 @@
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_B_F.png" type="Texture" id=29]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_A_L.png" type="Texture" id=30]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_B_L.png" type="Texture" id=31]
+[ext_resource path="res://Scenes/InteractiveObjects/Coin/Coin.tscn" type="PackedScene" id=32]
 
 [sub_resource type="ConvexPolygonShape2D" id=108]
 points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
@@ -3923,7 +3924,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=215]
-extents = Vector2( 6.83334, 2.83333 )
+extents = Vector2( 7, 2.5 )
 
 [sub_resource type="RectangleShape2D" id=211]
 extents = Vector2( 13, 2.5 )
@@ -3976,8 +3977,13 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 2424888, 210, 0, 2424889, 210, 0, 2424891, 210, 0, 2424892, 210, 0, 2883643, 201, 0, 2949179, 210, 0, 2949180, 210, 0, 3014701, 204, 0, 3014715, 210, 0, 3014716, 210, 0, 3080237, 210, 0, 3080238, 210, 0, 3080251, 210, 0, 3080252, 210, 0, 3211276, 210, 0, 3276811, 210, 0, 3342356, 210, 0, 3342357, 210, 0, 3407892, 210, 0, 3407893, 210, 0, 3538955, 204, 0, 3538970, 210, 0, 3538971, 210, 0, 3538982, 201, 0, 3604491, 210, 0, 3604492, 210, 0, 3604506, 210, 0, 3604507, 210, 0, 3604518, 210, 0, 3604519, 210, 0, 3670042, 210, 0, 3670043, 210, 0, 3670054, 210, 0, 3670055, 210, 0, 3670063, 204, 0, 3735564, 210, 0, 3735577, 210, 0, 3735578, 210, 0, 3735599, 210, 0, 3735600, 210, 0, 3997742, 210, 0, 3997743, 210, 0, 4128794, 210, 0, 4128795, 210, 0 )
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 11 )
+volume_db = 5.0
+autoplay = true
+
 [node name="Character" type="KinematicBody2D" parent="."]
-position = Vector2( 1010, 634 )
+position = Vector2( 1009, 639 )
 scale = Vector2( 0.35, 0.35 )
 script = ExtResource( 1 )
 
@@ -4006,13 +4012,8 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Character"]
-position = Vector2( -0.000244141, 21.1667 )
+position = Vector2( 4.57764e-05, 21.1667 )
 shape = SubResource( 215 )
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 11 )
-volume_db = 5.0
-autoplay = true
 
 [node name="Level2" type="Area2D" parent="."]
 
@@ -4135,6 +4136,45 @@ position = Vector2( 575, 300 )
 scale = Vector2( 2.5625, 2.5625 )
 normal = ExtResource( 6 )
 action = "ui_accept"
+
+[node name="Coin1" parent="." instance=ExtResource( 32 )]
+position = Vector2( 356, 438 )
+
+[node name="Coin2" parent="." instance=ExtResource( 32 )]
+position = Vector2( 921, 535 )
+
+[node name="Coin3" parent="." instance=ExtResource( 32 )]
+position = Vector2( 859, 597 )
+
+[node name="Coin4" parent="." instance=ExtResource( 32 )]
+position = Vector2( 939, 647 )
+
+[node name="Coin5" parent="." instance=ExtResource( 32 )]
+position = Vector2( 544, 871 )
+
+[node name="Coin6" parent="." instance=ExtResource( 32 )]
+position = Vector2( 777, 887 )
+
+[node name="Coin7" parent="." instance=ExtResource( 32 )]
+position = Vector2( 839, 795 )
+
+[node name="Coin8" parent="." instance=ExtResource( 32 )]
+position = Vector2( 672, 529 )
+
+[node name="Coin9" parent="." instance=ExtResource( 32 )]
+position = Vector2( 271, 861 )
+
+[node name="Coin10" parent="." instance=ExtResource( 32 )]
+position = Vector2( 412, 919 )
+
+[node name="Coin11" parent="." instance=ExtResource( 32 )]
+position = Vector2( 473, 919 )
+
+[node name="Coin12" parent="." instance=ExtResource( 32 )]
+position = Vector2( 406, 677 )
+
+[node name="Coin13" parent="." instance=ExtResource( 32 )]
+position = Vector2( 654, 871 )
 
 [connection signal="facing_direction_changed" from="Character" to="Character" method="_on_Character_facing_direction_changed"]
 [connection signal="state_changed" from="Character" to="Character" method="_on_state_changed"]

@@ -3861,6 +3861,26 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 
 [sub_resource type="SpriteFrames" id=214]
 animations = [ {
+"frames": [ ExtResource( 25 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "MoveDown",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "MoveLeft",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 27 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "MoveRight",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "MoveUp",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 24 ), ExtResource( 21 ) ],
 "loop": true,
 "name": "AttackUp",
@@ -3900,30 +3920,10 @@ animations = [ {
 "loop": true,
 "name": "AttackDown",
 "speed": 10.0
-}, {
-"frames": [ ExtResource( 27 ), ExtResource( 19 ) ],
-"loop": true,
-"name": "MoveRight",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 25 ), ExtResource( 16 ) ],
-"loop": true,
-"name": "MoveDown",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 23 ), ExtResource( 20 ) ],
-"loop": true,
-"name": "MoveUp",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 22 ), ExtResource( 17 ) ],
-"loop": true,
-"name": "MoveLeft",
-"speed": 5.0
 } ]
 
-[sub_resource type="CircleShape2D" id=215]
-radius = 18.7142
+[sub_resource type="RectangleShape2D" id=215]
+extents = Vector2( 6.83334, 2.83333 )
 
 [sub_resource type="RectangleShape2D" id=211]
 extents = Vector2( 13, 2.5 )
@@ -3977,8 +3977,8 @@ format = 1
 tile_data = PoolIntArray( 2424888, 210, 0, 2424889, 210, 0, 2424891, 210, 0, 2424892, 210, 0, 2883643, 201, 0, 2949179, 210, 0, 2949180, 210, 0, 3014701, 204, 0, 3014715, 210, 0, 3014716, 210, 0, 3080237, 210, 0, 3080238, 210, 0, 3080251, 210, 0, 3080252, 210, 0, 3211276, 210, 0, 3276811, 210, 0, 3342356, 210, 0, 3342357, 210, 0, 3407892, 210, 0, 3407893, 210, 0, 3538955, 204, 0, 3538970, 210, 0, 3538971, 210, 0, 3538982, 201, 0, 3604491, 210, 0, 3604492, 210, 0, 3604506, 210, 0, 3604507, 210, 0, 3604518, 210, 0, 3604519, 210, 0, 3670042, 210, 0, 3670043, 210, 0, 3670054, 210, 0, 3670055, 210, 0, 3670063, 204, 0, 3735564, 210, 0, 3735577, 210, 0, 3735578, 210, 0, 3735599, 210, 0, 3735600, 210, 0, 3997742, 210, 0, 3997743, 210, 0, 4128794, 210, 0, 4128795, 210, 0 )
 
 [node name="Character" type="KinematicBody2D" parent="."]
-position = Vector2( 422, 224 )
-scale = Vector2( 0.75, 0.75 )
+position = Vector2( 1010, 634 )
+scale = Vector2( 0.35, 0.35 )
 script = ExtResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Character"]
@@ -3991,6 +3991,7 @@ __meta__ = {
 
 [node name="Camera2D" type="Camera2D" parent="Character"]
 current = true
+zoom = Vector2( 0.4, 0.4 )
 limit_left = 0
 limit_top = 0
 limit_right = 1024
@@ -4005,7 +4006,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Character"]
-position = Vector2( 0, 4 )
+position = Vector2( -0.000244141, 21.1667 )
 shape = SubResource( 215 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
@@ -4139,3 +4140,4 @@ action = "ui_accept"
 [connection signal="state_changed" from="Character" to="Character" method="_on_state_changed"]
 [connection signal="animation_finished" from="Character/AnimatedSprite" to="Character" method="_on_AnimatedSprite_animation_finished"]
 [connection signal="frame_changed" from="Character/AnimatedSprite" to="Character" method="_on_AnimatedSprite_frame_changed"]
+[connection signal="body_entered" from="Level2" to="Character" method="_on_Level2_body_entered"]

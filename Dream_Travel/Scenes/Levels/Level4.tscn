@@ -2175,7 +2175,7 @@ __meta__ = {
 }
 
 [node name="ButtonInteract" type="TouchScreenButton" parent="UI_Container/UI/HUD"]
-position = Vector2( 575, 300 )
+position = Vector2( 576, 300 )
 scale = Vector2( 2.5625, 2.5625 )
 normal = ExtResource( 31 )
 action = "ui_accept"
@@ -2220,3 +2220,4 @@ position = Vector2( 308, 201 )
 [connection signal="state_changed" from="Character" to="Character" method="_on_state_changed"]
 [connection signal="animation_finished" from="Character/AnimatedSprite" to="Character" method="_on_AnimatedSprite_animation_finished"]
 [connection signal="frame_changed" from="Character/AnimatedSprite" to="Character" method="_on_AnimatedSprite_frame_changed"]
+[connection signal="body_entered" from="Level4" to="Character" method="_on_Level4_body_entered"]

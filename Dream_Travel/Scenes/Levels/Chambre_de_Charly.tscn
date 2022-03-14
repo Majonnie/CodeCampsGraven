@@ -7,15 +7,15 @@
 [ext_resource path="res://Scenes/Levels/Tileset Charly Room/interior.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/Levels/Tileset Charly Room/bed.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/Levels/Tileset Charly Room/Museum interior.PNG" type="Texture" id=7]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_R.png" type="Texture" id=8]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_F.png" type="Texture" id=9]
+[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_F.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_F.png" type="Texture" id=9]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_B_R.png" type="Texture" id=10]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_F.png" type="Texture" id=11]
+[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_B.png" type="Texture" id=11]
 [ext_resource path="res://Scenes/UI/HUD/HUD.png" type="Texture" id=12]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_L.png" type="Texture" id=13]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_L.png" type="Texture" id=14]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_B.png" type="Texture" id=15]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_w_B.png" type="Texture" id=16]
+[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_L.png" type="Texture" id=13]
+[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_R.png" type="Texture" id=14]
+[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_B.png" type="Texture" id=15]
+[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_R.png" type="Texture" id=16]
 [ext_resource path="res://Scenes/Music/At Dusk I Will Think of You... - Kingdom Hearts HD 1.5 ReMIX Soundtrack [KH 358_2 Days] (online-audio-converter.com).wav" type="AudioStream" id=17]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_B_B.png" type="Texture" id=18]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_A_B.png" type="Texture" id=19]
@@ -24,7 +24,7 @@
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_B_F.png" type="Texture" id=22]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_A_L.png" type="Texture" id=23]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_B_L.png" type="Texture" id=24]
-[ext_resource path="res://Scenes/Character/Sprites/Dream/charly_R.png" type="Texture" id=25]
+[ext_resource path="res://Scenes/Character/Sprites/Reality/R_charly_w_L.png" type="Texture" id=25]
 [ext_resource path="res://Scenes/Buttons/Sprite/Arrow_Up.png" type="Texture" id=26]
 [ext_resource path="res://Scenes/Buttons/Sprite/Interactiv_Button.png" type="Texture" id=27]
 [ext_resource path="res://Scenes/Buttons/Sprite/Arrow_Right.png" type="Texture" id=28]
@@ -809,6 +809,26 @@ points = PoolVector2Array( 85.9408, 48.0326, 5.00717, 49.428, 4.64206, 8.28482, 
 
 [sub_resource type="SpriteFrames" id=35]
 animations = [ {
+"frames": [ ExtResource( 9 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "MoveDown",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "MoveLeft",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "MoveRight",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "MoveUp",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 19 ), ExtResource( 18 ) ],
 "loop": true,
 "name": "AttackUp",
@@ -819,7 +839,7 @@ animations = [ {
 "name": "AttackLeft",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 11 ) ],
+"frames": [ ExtResource( 9 ) ],
 "loop": true,
 "name": "IdleDown",
 "speed": 5.0
@@ -829,7 +849,7 @@ animations = [ {
 "name": "IdleLeft",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 25 ) ],
+"frames": [ ExtResource( 14 ) ],
 "loop": true,
 "name": "IdleRight",
 "speed": 5.0
@@ -848,30 +868,10 @@ animations = [ {
 "loop": true,
 "name": "AttackDown",
 "speed": 10.0
-}, {
-"frames": [ ExtResource( 25 ), ExtResource( 8 ) ],
-"loop": true,
-"name": "MoveRight",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 11 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "MoveDown",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 15 ), ExtResource( 16 ) ],
-"loop": true,
-"name": "MoveUp",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 13 ), ExtResource( 14 ) ],
-"loop": true,
-"name": "MoveLeft",
-"speed": 5.0
 } ]
 
-[sub_resource type="CircleShape2D" id=36]
-radius = 18.7142
+[sub_resource type="RectangleShape2D" id=36]
+extents = Vector2( 6.66667, 2.33333 )
 
 [sub_resource type="RectangleShape2D" id=32]
 extents = Vector2( 15, 22.5 )
@@ -912,7 +912,7 @@ format = 1
 tile_data = PoolIntArray( 13, 2, 0, 15, 2, 0, 65536, -1610612736, 0, 65547, 1610612747, 0, 131072, -1610612736, 0, 131077, -1073741816, 0, 131078, -1073741815, 0, 131087, 28, 0, 196608, -1610612736, 0, 262144, -1610612736, 0, 262145, -1610612727, 0, 262146, 13, 0, 262147, 1610612744, 0, 262148, -1073741801, 0, 262150, -1073741801, 0, 262152, -1073741801, 0, 262156, 31, 0, 262157, 12, 0, 262160, -1610612705, 0, 327680, -1610612736, 0, 393216, -1610612736, 0, 393220, -1073741801, 0, 393232, -1073741802, 0, 524289, 10, 0, 524292, -1073741801, 0, 524294, -1073741801, 0, 524296, -1073741801, 0, 655376, 29, 0, 720897, 1610612755, 0, 720899, 1610612750, 0, 720906, 1610612747, 0 )
 
 [node name="Character" type="KinematicBody2D" parent="."]
-position = Vector2( 422, 224 )
+position = Vector2( 529, 230 )
 scale = Vector2( 0.75, 0.75 )
 script = ExtResource( 4 )
 
@@ -926,6 +926,7 @@ __meta__ = {
 
 [node name="Camera2D" type="Camera2D" parent="Character"]
 current = true
+zoom = Vector2( 0.4, 0.4 )
 limit_left = 0
 limit_top = 0
 limit_right = 1024
@@ -940,7 +941,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Character"]
-position = Vector2( 0, 4 )
+position = Vector2( 0, 21.3333 )
 shape = SubResource( 36 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
@@ -952,7 +953,7 @@ attenuation = 14.9285
 [node name="Level" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level"]
-position = Vector2( 166, 97 )
+position = Vector2( 160, 92 )
 shape = SubResource( 32 )
 
 [node name="UI_Container" type="CanvasLayer" parent="."]
@@ -1066,6 +1067,7 @@ __meta__ = {
 }
 
 [node name="ButtonInteract" type="TouchScreenButton" parent="UI_Container/UI/HUD"]
+visible = false
 position = Vector2( 575, 300 )
 scale = Vector2( 2.5625, 2.5625 )
 normal = ExtResource( 27 )

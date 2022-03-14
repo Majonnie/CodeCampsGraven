@@ -829,15 +829,15 @@ animations = [ {
 "name": "MoveUp",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 19 ), ExtResource( 18 ) ],
+"frames": [ ExtResource( 21 ), ExtResource( 22 ) ],
 "loop": true,
-"name": "AttackUp",
+"name": "AttackDown",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 23 ), ExtResource( 24 ) ],
+"frames": [ ExtResource( 15 ) ],
 "loop": true,
-"name": "AttackLeft",
-"speed": 10.0
+"name": "IdleUp",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 9 ) ],
 "loop": true,
@@ -849,6 +849,11 @@ animations = [ {
 "name": "IdleLeft",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 23 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "AttackLeft",
+"speed": 10.0
+}, {
 "frames": [ ExtResource( 14 ) ],
 "loop": true,
 "name": "IdleRight",
@@ -859,14 +864,9 @@ animations = [ {
 "name": "AttackRight",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 15 ) ],
+"frames": [ ExtResource( 19 ), ExtResource( 18 ) ],
 "loop": true,
-"name": "IdleUp",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 21 ), ExtResource( 22 ) ],
-"loop": true,
-"name": "AttackDown",
+"name": "AttackUp",
 "speed": 10.0
 } ]
 
@@ -929,8 +929,8 @@ current = true
 zoom = Vector2( 0.4, 0.4 )
 limit_left = 0
 limit_top = 0
-limit_right = 1024
-limit_bottom = 606
+limit_right = 551
+limit_bottom = 390
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true
 smoothing_enabled = true

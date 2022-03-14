@@ -5,7 +5,6 @@ onready var animated_sprite = get_node("AnimatedSprite")
 enum STATE {    #permet de gérer l'état du personnage
 	IDLE,
 	MOVE,
-	ATTACK,
 }
 
 var dir_dict: Dictionary = {    #dictionnaire permettant de gerer les mouvements du personnage 
@@ -58,15 +57,6 @@ func _input(_event):
 	
 	moving_direction = moving_direction.normalized() #Limite à 1 la direction (pour la vitesse en diagonale)
 
-	if Input.is_action_just_pressed("ui_accept"):  #si le bouton attack est appuyé 
-		set_state(STATE.ATTACK)   #alors l'état du perso change en ATTACK
-	
-
-	if state != STATE.ATTACK:
-		if moving_direction == Vector2.ZERO:
-			set_state(STATE.IDLE)
-		else:
-			set_state(STATE.MOVE)
 
 #### LOGIC SCRIPT ####
 
@@ -78,7 +68,6 @@ func _update_animation() -> void:
 	match(state):
 		STATE.IDLE: state_name = "Idle"
 		STATE.MOVE: state_name = "Move"
-		STATE.ATTACK: state_name = "Attack"
 		
 	animated_sprite.play(state_name + dir_name)
 
@@ -95,9 +84,6 @@ func _find_dir_name(dir: Vector2) -> String:   #fonction permettant de trouver l
 
 #### SIGNAL RESPONSES ####
 
-func _on_AnimatedSprite_animation_finished() -> void:    #fonction qui permet de gerer l'animation des attaques
-	if "Attack".is_subsequence_of(animated_sprite.get_animation()): #si il y a le mot attaque dans l'animation
-		set_state(STATE.IDLE)
 
 func _on_state_changed():   #fonction qui va être appelé a chaque fois que staten change de value 
 	_update_animation()
@@ -118,17 +104,6 @@ func _on_AnimatedSprite_frame_changed():
 func _on_Character_facing_direction_changed():
 	pass # Replace with function body.
 
-func _on_Level1_body_entered(body):
-	get_tree().change_scene("res://Scenes/Levels/Level2.tscn")
 
-
-func _on_Level2_body_entered(body):
-	get_tree().change_scene("res://Scenes/Levels/Level3.tscn")
-
-
-func _on_Level3_body_entered(body):
-	get_tree().change_scene("res://Scenes/Levels/Level4.tscn")
-
-
-func _on_Level4_body_entered(body):
-	get_tree().change_scene("res://Scenes/Levels/LevelBoss.tscn")
+func _on_Level_body_entered(body) -> void:
+	get_tree().change_scene("res://Scenes/Levels/Level1.tscn")

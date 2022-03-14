@@ -2157,7 +2157,40 @@ normal = ExtResource( 31 )
 action = "ui_accept"
 
 [node name="Coin1" parent="." instance=ExtResource( 39 )]
+position = Vector2( 73, 431 )
+
+[node name="Coin2" parent="." instance=ExtResource( 39 )]
+position = Vector2( 185, 302 )
+
+[node name="Coin3" parent="." instance=ExtResource( 39 )]
+position = Vector2( 888, 525 )
+
+[node name="Coin4" parent="." instance=ExtResource( 39 )]
+position = Vector2( 776, 491 )
+
+[node name="Coin5" parent="." instance=ExtResource( 39 )]
+position = Vector2( 716, 461 )
+
+[node name="Coin6" parent="." instance=ExtResource( 39 )]
+position = Vector2( 478, 139 )
+
+[node name="Coin7" parent="." instance=ExtResource( 39 )]
+position = Vector2( 878, 80 )
+
+[node name="Coin8" parent="." instance=ExtResource( 39 )]
+position = Vector2( 942, 133 )
+
+[node name="Coin9" parent="." instance=ExtResource( 39 )]
+position = Vector2( 881, 207 )
+
+[node name="Coin10" parent="." instance=ExtResource( 39 )]
 position = Vector2( 538, 312 )
+
+[node name="Coin11" parent="." instance=ExtResource( 39 )]
+position = Vector2( 919, 398 )
+
+[node name="Coin12" parent="." instance=ExtResource( 39 )]
+position = Vector2( 308, 201 )
 
 [connection signal="facing_direction_changed" from="Character" to="Character" method="_on_Character_facing_direction_changed"]
 [connection signal="state_changed" from="Character" to="Character" method="_on_state_changed"]

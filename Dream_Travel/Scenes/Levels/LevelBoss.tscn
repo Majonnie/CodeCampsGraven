@@ -1,4 +1,4 @@
-[gd_scene load_steps=141 format=2]
+[gd_scene load_steps=142 format=2]
 
 [ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Buttons/Sprite/Arrow_Up.png" type="Texture" id=2]
@@ -34,6 +34,7 @@
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_B_F.png" type="Texture" id=32]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_A_L.png" type="Texture" id=33]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_B_L.png" type="Texture" id=34]
+[ext_resource path="res://Scenes/InteractiveObjects/Coin/Coin.tscn" type="PackedScene" id=35]
 
 [sub_resource type="ConvexPolygonShape2D" id=108]
 points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
@@ -5249,7 +5250,7 @@ shape = SubResource( 221 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 13 )
-volume_db = -15.0
+volume_db = -5.0
 autoplay = true
 script = ExtResource( 14 )
 
@@ -5368,6 +5369,48 @@ position = Vector2( 575, 300 )
 scale = Vector2( 2.5625, 2.5625 )
 normal = ExtResource( 6 )
 action = "ui_accept"
+
+[node name="Coin1" parent="." instance=ExtResource( 35 )]
+position = Vector2( 224, 562 )
+
+[node name="Coin2" parent="." instance=ExtResource( 35 )]
+position = Vector2( 404, 491 )
+
+[node name="Coin3" parent="." instance=ExtResource( 35 )]
+position = Vector2( 393, 574 )
+
+[node name="Coin4" parent="." instance=ExtResource( 35 )]
+position = Vector2( 663, 572 )
+
+[node name="Coin5" parent="." instance=ExtResource( 35 )]
+position = Vector2( 652, 441 )
+
+[node name="Coin6" parent="." instance=ExtResource( 35 )]
+position = Vector2( 903, 447 )
+
+[node name="Coin7" parent="." instance=ExtResource( 35 )]
+position = Vector2( 613, 724 )
+
+[node name="Coin8" parent="." instance=ExtResource( 35 )]
+position = Vector2( 350, 725 )
+
+[node name="Coin9" parent="." instance=ExtResource( 35 )]
+position = Vector2( 347, 838 )
+
+[node name="Coin10" parent="." instance=ExtResource( 35 )]
+position = Vector2( 613, 841 )
+
+[node name="Coin11" parent="." instance=ExtResource( 35 )]
+position = Vector2( 796, 640 )
+
+[node name="Coin12" parent="." instance=ExtResource( 35 )]
+position = Vector2( 1077, 644 )
+
+[node name="Coin13" parent="." instance=ExtResource( 35 )]
+position = Vector2( 797, 887 )
+
+[node name="Coin14" parent="." instance=ExtResource( 35 )]
+position = Vector2( 1075, 889 )
 
 [connection signal="facing_direction_changed" from="Character" to="Character" method="_on_Character_facing_direction_changed"]
 [connection signal="state_changed" from="Character" to="Character" method="_on_state_changed"]

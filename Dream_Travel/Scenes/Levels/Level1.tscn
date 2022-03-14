@@ -1,4 +1,4 @@
-[gd_scene load_steps=111 format=2]
+[gd_scene load_steps=112 format=2]
 
 [ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_F.png" type="Texture" id=2]
@@ -31,6 +31,7 @@
 [ext_resource path="res://Scenes/UI/HUD/HUD_Mask.png" type="Texture" id=29]
 [ext_resource path="res://Scenes/InteractiveObjects/Coin/HUD_Coin.png" type="Texture" id=30]
 [ext_resource path="res://Scenes/UI/HUD/HUD_Damage (64x64).png" type="Texture" id=31]
+[ext_resource path="res://Scenes/InteractiveObjects/Coin/Coin.tscn" type="PackedScene" id=32]
 
 [sub_resource type="ConvexPolygonShape2D" id=32]
 points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
@@ -3896,6 +3897,45 @@ position = Vector2( 575, 300 )
 scale = Vector2( 2.5625, 2.5625 )
 normal = ExtResource( 23 )
 action = "ui_accept"
+
+[node name="Coin1" parent="." instance=ExtResource( 32 )]
+position = Vector2( 276, 496 )
+
+[node name="Coin2" parent="." instance=ExtResource( 32 )]
+position = Vector2( 591, 273 )
+
+[node name="Coin3" parent="." instance=ExtResource( 32 )]
+position = Vector2( 273, 315 )
+
+[node name="Coin4" parent="." instance=ExtResource( 32 )]
+position = Vector2( 67, 494 )
+
+[node name="Coin5" parent="." instance=ExtResource( 32 )]
+position = Vector2( 449, 545 )
+
+[node name="Coin6" parent="." instance=ExtResource( 32 )]
+position = Vector2( 356, 544 )
+
+[node name="Coin7" parent="." instance=ExtResource( 32 )]
+position = Vector2( 142, 120 )
+z_index = 1
+
+[node name="Coin8" parent="." instance=ExtResource( 32 )]
+position = Vector2( 876, 324 )
+
+[node name="Coin9" parent="." instance=ExtResource( 32 )]
+position = Vector2( 876, 185 )
+
+[node name="Coin10" parent="." instance=ExtResource( 32 )]
+position = Vector2( 805, 275 )
+
+[node name="Coin11" parent="." instance=ExtResource( 32 )]
+position = Vector2( 802, 89 )
+z_index = 1
+
+[node name="Coin12" parent="." instance=ExtResource( 32 )]
+position = Vector2( 588, 86 )
+z_index = 1
 
 [connection signal="facing_direction_changed" from="Character" to="Character" method="_on_Character_facing_direction_changed"]
 [connection signal="state_changed" from="Character" to="Character" method="_on_state_changed"]

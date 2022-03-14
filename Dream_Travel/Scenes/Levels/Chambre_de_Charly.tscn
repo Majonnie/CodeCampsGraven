@@ -849,25 +849,30 @@ animations = [ {
 "name": "AttackUp",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 9 ), ExtResource( 8 ) ],
+"frames": [ ExtResource( 9 ) ],
 "loop": true,
-"name": "MoveDown",
+"name": "AttackUp",
 "speed": 10.0
+}, {
+"frames": [ ExtResource( 15 ) ],
+"loop": true,
+"name": "IdleUp",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 13 ), ExtResource( 25 ) ],
 "loop": true,
 "name": "MoveLeft",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 14 ), ExtResource( 16 ) ],
+"frames": [ ExtResource( 13 ) ],
 "loop": true,
-"name": "MoveRight",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 15 ), ExtResource( 11 ) ],
-"loop": true,
-"name": "MoveUp",
+"name": "IdleLeft",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "AttackRight",
+"speed": 10.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=36]

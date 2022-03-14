@@ -1,4 +1,4 @@
-[gd_scene load_steps=112 format=2]
+[gd_scene load_steps=113 format=2]
 
 [ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_F.png" type="Texture" id=2]
@@ -32,6 +32,7 @@
 [ext_resource path="res://Scenes/InteractiveObjects/Coin/HUD_Coin.png" type="Texture" id=30]
 [ext_resource path="res://Scenes/UI/HUD/HUD_Damage (64x64).png" type="Texture" id=31]
 [ext_resource path="res://Scenes/InteractiveObjects/Coin/Coin.tscn" type="PackedScene" id=32]
+[ext_resource path="res://Scenes/Dialogue/DialogBoxLevel1.tscn" type="PackedScene" id=33]
 
 [sub_resource type="ConvexPolygonShape2D" id=32]
 points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
@@ -3635,29 +3636,9 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 
 [sub_resource type="SpriteFrames" id=111]
 animations = [ {
-"frames": [ ExtResource( 10 ) ],
+"frames": [ ExtResource( 8 ) ],
 "loop": true,
-"name": "IdleLeft",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 20 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "AttackLeft",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 16 ), ExtResource( 15 ) ],
-"loop": true,
-"name": "AttackUp",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 11 ) ],
-"loop": true,
-"name": "IdleRight",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 2 ) ],
-"loop": true,
-"name": "IdleDown",
+"name": "IdleUp",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 17 ), ExtResource( 14 ) ],
@@ -3665,15 +3646,35 @@ animations = [ {
 "name": "AttackRight",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 8 ) ],
+"frames": [ ExtResource( 16 ), ExtResource( 15 ) ],
 "loop": true,
-"name": "IdleUp",
+"name": "AttackUp",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "AttackLeft",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "IdleDown",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 18 ), ExtResource( 19 ) ],
 "loop": true,
 "name": "AttackDown",
 "speed": 10.0
+}, {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "IdleRight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "IdleLeft",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 2 ), ExtResource( 4 ) ],
 "loop": true,
@@ -3742,6 +3743,12 @@ position = Vector2( 967, 245 )
 scale = Vector2( 0.35, 0.35 )
 z_index = 1
 script = ExtResource( 1 )
+
+[node name="DialogLevel1" parent="Character" instance=ExtResource( 33 )]
+margin_left = -260.0
+margin_top = -65.7143
+margin_right = 380.0
+margin_bottom = 297.286
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Character"]
 scale = Vector2( 0.015, 0.015 )
@@ -3927,7 +3934,7 @@ position = Vector2( 876, 324 )
 position = Vector2( 876, 185 )
 
 [node name="Coin10" parent="." instance=ExtResource( 32 )]
-position = Vector2( 805, 275 )
+position = Vector2( 802, 275 )
 
 [node name="Coin11" parent="." instance=ExtResource( 32 )]
 position = Vector2( 802, 89 )

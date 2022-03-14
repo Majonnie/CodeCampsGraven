@@ -8,12 +8,11 @@
 script/source = "extends Control
 
 var dialog = [
-	'[???] Hey, Vite Charly ! réveille toi',
-	 '[CHARLY] Que-Qui es-tu ? Où est-ce que je suis ?',
-	'[CHARLY] Pourquoi je suis plus moi-même qu\\'est-ce qui se passe ?' ,
-	'[???] Charly... Je suis toi et toi tu es moi, on a pas le temps apelle moi Ona ',
-	'[Ona] Il faut que t\\'atteigne le sanctuaire de ton âme ',
-	'[Ona] Ils arrivent ! Tiens prend la Blade-Unphobia, elle tranche les entités obscure ! ',
+	'[ONA] Chaque pièce représente une parti de toi, autrefois elles étaient sans crainte',
+	 '[ONA] mais comme tu grandi, beaucoup de problèmes dont tu ne te souciais pas font surface',
+	'[Charly] Alors c\\'est vrai ? Tu es vraiment moi ? où suis-je maintenant ?',
+	'[ONA] Oui, Tu es dans ton coeur spirituelle, on arrive bientot dans le sanctuaire'
+	
 ]
 
 var dialog_index = 0
@@ -87,7 +86,7 @@ tracks/0/keys = {
 "values": [ Vector2( 535.093, 307.454 ) ]
 }
 
-[node name="DialogLevel1" type="Control"]
+[node name="DialogLevel3" type="Control"]
 margin_right = 640.0
 margin_bottom = 363.0
 

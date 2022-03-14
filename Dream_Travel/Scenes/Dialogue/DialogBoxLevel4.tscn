@@ -8,12 +8,13 @@
 script/source = "extends Control
 
 var dialog = [
-	'[???] Hey, Vite Charly ! réveille toi',
-	 '[CHARLY] Que-Qui es-tu ? Où est-ce que je suis ?',
-	'[CHARLY] Pourquoi je suis plus moi-même qu\\'est-ce qui se passe ?' ,
-	'[???] Charly... Je suis toi et toi tu es moi, on a pas le temps apelle moi Ona ',
-	'[Ona] Il faut que t\\'atteigne le sanctuaire de ton âme ',
-	'[Ona] Ils arrivent ! Tiens prend la Blade-Unphobia, elle tranche les entités obscure ! ',
+	'[ONA] Voilà, le Sanctuaire de l\\'âme' ,
+	 '[ONA] c\\'est un endroit paisible où reposent en paix tes beaux souvenirs',
+	'[ONA] C\\'est ici que ton passé vit, avec le temps je serais toujours là pour les garder précieusement ici' ,
+	'[ONA Tu reviendra toujours ici quand tu te sentira triste ou même heureux !' ,
+	'[ONA] Des démons ! Vite il faut les arreter, cette endroit est sacrée pour ton âme !',
+	'[ONA] Il y a surement une entitée démoniaque puissante dans ton âme rejoins la vite !',
+	'[Charly] Il faut que je me débarasse de ces entitées et que je rejoingne mon âme'
 ]
 
 var dialog_index = 0
@@ -87,7 +88,7 @@ tracks/0/keys = {
 "values": [ Vector2( 535.093, 307.454 ) ]
 }
 
-[node name="DialogLevel1" type="Control"]
+[node name="DialogLevel4" type="Control"]
 margin_right = 640.0
 margin_bottom = 363.0
 
@@ -100,8 +101,8 @@ script = SubResource( 1 )
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -167.0
-margin_right = 52.0
-margin_bottom = 44.0
+margin_right = 55.0
+margin_bottom = 54.0
 texture = ExtResource( 1 )
 expand = true
 stretch_mode = 1
@@ -111,8 +112,8 @@ anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -158.0
 margin_top = 5.0
-margin_right = 36.0
-margin_bottom = 42.0
+margin_right = 48.0
+margin_bottom = 49.0
 theme = SubResource( 2 )
 custom_colors/default_color = Color( 0.878431, 0.858824, 0.823529, 1 )
 custom_fonts/normal_font = SubResource( 3 )

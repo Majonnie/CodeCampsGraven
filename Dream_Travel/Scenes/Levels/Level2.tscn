@@ -1,4 +1,4 @@
-[gd_scene load_steps=132 format=2]
+[gd_scene load_steps=133 format=2]
 
 [ext_resource path="res://Scenes/Character/Character.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Buttons/Sprite/Arrow_Up.png" type="Texture" id=2]
@@ -32,6 +32,7 @@
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_A_L.png" type="Texture" id=30]
 [ext_resource path="res://Scenes/Character/Sprites/Dream/charly_a_B_L.png" type="Texture" id=31]
 [ext_resource path="res://Scenes/InteractiveObjects/Coin/Coin.tscn" type="PackedScene" id=32]
+[ext_resource path="res://Scenes/Dialogue/DialogBoxLevel2.tscn" type="PackedScene" id=33]
 
 [sub_resource type="ConvexPolygonShape2D" id=108]
 points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
@@ -3862,35 +3863,10 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 
 [sub_resource type="SpriteFrames" id=214]
 animations = [ {
-"frames": [ ExtResource( 30 ), ExtResource( 31 ) ],
-"loop": true,
-"name": "AttackLeft",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 25 ) ],
-"loop": true,
-"name": "IdleDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 27 ) ],
-"loop": true,
-"name": "IdleRight",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 22 ) ],
-"loop": true,
-"name": "IdleLeft",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 23 ) ],
 "loop": true,
 "name": "IdleUp",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 28 ), ExtResource( 29 ) ],
-"loop": true,
-"name": "AttackDown",
-"speed": 10.0
 }, {
 "frames": [ ExtResource( 26 ), ExtResource( 18 ) ],
 "loop": true,
@@ -3901,6 +3877,31 @@ animations = [ {
 "loop": true,
 "name": "AttackUp",
 "speed": 10.0
+}, {
+"frames": [ ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "AttackLeft",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 25 ) ],
+"loop": true,
+"name": "IdleDown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 28 ), ExtResource( 29 ) ],
+"loop": true,
+"name": "AttackDown",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 27 ) ],
+"loop": true,
+"name": "IdleRight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ) ],
+"loop": true,
+"name": "IdleLeft",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 25 ), ExtResource( 16 ) ],
 "loop": true,
@@ -3969,7 +3970,12 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 2359336, 210, 0, 2359337, 210, 0, 2359351, 210, 0, 2359352, 210, 0, 2359353, 210, 0, 2359354, 210, 0, 2359355, 210, 0, 2359356, 210, 0, 2424872, 210, 0, 2424873, 210, 0, 2424887, 210, 0, 2424888, 210, 0, 2424889, 210, 0, 2424890, 210, 0, 2424891, 210, 0, 2424892, 210, 0, 2490408, 210, 0, 2490409, 210, 0, 2555944, 210, 0, 2555945, 210, 0, 2949179, 210, 0, 2949180, 210, 0, 3014715, 210, 0, 3014716, 210, 0, 3080237, 210, 0, 3080238, 210, 0, 3080251, 210, 0, 3080252, 210, 0, 3145739, 170, 0, 3145740, 170, 0, 3145741, 170, 0, 3211275, 170, 0, 3211276, 170, 0, 3211277, 170, 0, 3276811, 170, 0, 3276812, 170, 0, 3276813, 170, 0, 3276821, 170, 0, 3342356, 210, 0, 3342357, 210, 0, 3407892, 210, 0, 3407893, 210, 0, 3473434, 170, 0, 3473435, 170, 0, 3473454, 210, 0, 3473455, 210, 0, 3473456, 170, 0, 3538970, 210, 0, 3538971, 210, 0, 3604491, 210, 0, 3604492, 210, 0, 3604506, 210, 0, 3604507, 210, 0, 3604518, 210, 0, 3604519, 210, 0, 3670041, 210, 0, 3670042, 210, 0, 3670043, 210, 0, 3670054, 210, 0, 3670055, 210, 0, 3735563, 210, 0, 3735564, 210, 0, 3735577, 210, 0, 3735578, 210, 0, 3735590, 170, 0, 3735591, 170, 0, 3735599, 210, 0, 3735600, 210, 0, 3801126, 170, 0, 3801127, 170, 0, 3866671, 170, 0, 3866672, 170, 0, 3932174, 170, 0, 3932175, 170, 0, 3932176, 170, 0, 3932177, 170, 0, 3932178, 170, 0, 3932206, 170, 0, 3932207, 170, 0, 3932208, 170, 0, 3997709, 170, 0, 3997710, 170, 0, 3997711, 170, 0, 3997712, 170, 0, 3997713, 170, 0, 3997714, 170, 0, 3997715, 170, 0, 3997742, 210, 0, 3997743, 210, 0, 3997744, 210, 0, 4128794, 210, 0, 4128795, 210, 0 )
 
-[node name="Salle,  Deco Index" type="TileMap" parent="."]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 11 )
+volume_db = 5.0
+autoplay = true
+
+[node name="Salle,  Deco Index" type="TileMap" parent="AudioStreamPlayer2D"]
 position = Vector2( 76, -89 )
 z_index = 1
 tile_set = SubResource( 105 )
@@ -3977,15 +3983,16 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 2424888, 210, 0, 2424889, 210, 0, 2424891, 210, 0, 2424892, 210, 0, 2883643, 201, 0, 2949179, 210, 0, 2949180, 210, 0, 3014701, 204, 0, 3014715, 210, 0, 3014716, 210, 0, 3080237, 210, 0, 3080238, 210, 0, 3080251, 210, 0, 3080252, 210, 0, 3211276, 210, 0, 3276811, 210, 0, 3342356, 210, 0, 3342357, 210, 0, 3407892, 210, 0, 3407893, 210, 0, 3538955, 204, 0, 3538970, 210, 0, 3538971, 210, 0, 3538982, 201, 0, 3604491, 210, 0, 3604492, 210, 0, 3604506, 210, 0, 3604507, 210, 0, 3604518, 210, 0, 3604519, 210, 0, 3670042, 210, 0, 3670043, 210, 0, 3670054, 210, 0, 3670055, 210, 0, 3670063, 204, 0, 3735564, 210, 0, 3735577, 210, 0, 3735578, 210, 0, 3735599, 210, 0, 3735600, 210, 0, 3997742, 210, 0, 3997743, 210, 0, 4128794, 210, 0, 4128795, 210, 0 )
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 11 )
-volume_db = 5.0
-autoplay = true
-
 [node name="Character" type="KinematicBody2D" parent="."]
 position = Vector2( 1009, 639 )
 scale = Vector2( 0.35, 0.35 )
 script = ExtResource( 1 )
+
+[node name="DialogLevel2" parent="Character" instance=ExtResource( 33 )]
+margin_left = -251.428
+margin_top = -60.0
+margin_right = 388.572
+margin_bottom = 303.0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Character"]
 scale = Vector2( 0.015, 0.015 )

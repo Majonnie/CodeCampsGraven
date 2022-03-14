@@ -1,4 +1,4 @@
-[gd_scene load_steps=105 format=2]
+[gd_scene load_steps=106 format=2]
 
 [ext_resource path="res://Scenes/Levels/tilesets Sanctuaire/Texture/ddybxx9-6df4dcb5-d2fb-4d67-9d6d-afaa5ff7dd0b-removebg-preview.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/UI/HUD/HUD_Mask.png" type="Texture" id=2]
@@ -39,6 +39,7 @@
 [ext_resource path="res://Scenes/InteractiveObjects/Coin/HUD_Coin.png" type="Texture" id=37]
 [ext_resource path="res://Scenes/UI/HUD/HUD_Damage (64x64).png" type="Texture" id=38]
 [ext_resource path="res://Scenes/InteractiveObjects/Coin/Coin.tscn" type="PackedScene" id=39]
+[ext_resource path="res://Scenes/Dialogue/DialogBoxLevel4.tscn" type="PackedScene" id=40]
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
 points = PoolVector2Array( 31.2021, 32, 25.3413, 32, 25.6204, 1.11185, 32, 1.9491 )
@@ -1894,10 +1895,10 @@ points = PoolVector2Array( 32, 24.3442, 2.40341, 23.3396, 1.73361, 9.9437, 23.93
 
 [sub_resource type="SpriteFrames" id=70]
 animations = [ {
-"frames": [ ExtResource( 27 ), ExtResource( 28 ) ],
+"frames": [ ExtResource( 16 ) ],
 "loop": true,
-"name": "AttackLeft",
-"speed": 10.0
+"name": "IdleLeft",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 14 ) ],
 "loop": true,
@@ -1909,19 +1910,14 @@ animations = [ {
 "name": "IdleRight",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 16 ) ],
+"frames": [ ExtResource( 27 ), ExtResource( 28 ) ],
 "loop": true,
-"name": "IdleLeft",
-"speed": 5.0
+"name": "AttackLeft",
+"speed": 10.0
 }, {
-"frames": [ ExtResource( 18 ) ],
+"frames": [ ExtResource( 23 ), ExtResource( 22 ) ],
 "loop": true,
-"name": "IdleUp",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 25 ), ExtResource( 26 ) ],
-"loop": true,
-"name": "AttackDown",
+"name": "AttackUp",
 "speed": 10.0
 }, {
 "frames": [ ExtResource( 24 ), ExtResource( 13 ) ],
@@ -1929,10 +1925,15 @@ animations = [ {
 "name": "AttackRight",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 23 ), ExtResource( 22 ) ],
+"frames": [ ExtResource( 25 ), ExtResource( 26 ) ],
 "loop": true,
-"name": "AttackUp",
+"name": "AttackDown",
 "speed": 10.0
+}, {
+"frames": [ ExtResource( 18 ) ],
+"loop": true,
+"name": "IdleUp",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 14 ), ExtResource( 12 ) ],
 "loop": true,
@@ -2022,6 +2023,12 @@ tile_data = PoolIntArray( 0, 536870927, 0, 4, 5, 0, 7, 5, 0, 65558, 536870917, 0
 position = Vector2( 160, 494 )
 scale = Vector2( 0.55, 0.55 )
 script = ExtResource( 5 )
+
+[node name="DialogLevel4" parent="Character" instance=ExtResource( 40 )]
+margin_left = -243.636
+margin_top = -78.1818
+margin_right = 396.364
+margin_bottom = 284.818
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Character"]
 scale = Vector2( 0.015, 0.015 )

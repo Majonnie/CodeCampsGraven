@@ -809,6 +809,46 @@ points = PoolVector2Array( 81.5277, 60.8936, 5.71753, 64.3658, 4.64206, 8.28482,
 
 [sub_resource type="SpriteFrames" id=35]
 animations = [ {
+"frames": [ ExtResource( 23 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "AttackLeft",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "IdleDown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "IdleRight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "IdleLeft",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "IdleUp",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "AttackDown",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "AttackRight",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "AttackUp",
+"speed": 10.0
+}, {
 "frames": [ ExtResource( 9 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "MoveDown",
@@ -828,46 +868,6 @@ animations = [ {
 "loop": true,
 "name": "MoveUp",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 19 ), ExtResource( 18 ) ],
-"loop": true,
-"name": "AttackUp",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 23 ), ExtResource( 24 ) ],
-"loop": true,
-"name": "AttackLeft",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 9 ) ],
-"loop": true,
-"name": "IdleDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 13 ) ],
-"loop": true,
-"name": "IdleLeft",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 14 ) ],
-"loop": true,
-"name": "IdleRight",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 20 ), ExtResource( 10 ) ],
-"loop": true,
-"name": "AttackRight",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 15 ) ],
-"loop": true,
-"name": "IdleUp",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 21 ), ExtResource( 22 ) ],
-"loop": true,
-"name": "AttackDown",
-"speed": 10.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=36]
@@ -1073,7 +1073,7 @@ scale = Vector2( 2.5625, 2.5625 )
 normal = ExtResource( 27 )
 action = "ui_accept"
 
-[connection signal="facing_direction_changed" from="Character" to="Character" method="_on_Character_facing_direction_changed"]
+[connection signal="facing_direction_changed" from="Character" to="Character" method="_on_facing_direction_changed"]
 [connection signal="state_changed" from="Character" to="Character" method="_on_state_changed"]
 [connection signal="animation_finished" from="Character/AnimatedSprite" to="Character" method="_on_AnimatedSprite_animation_finished"]
 [connection signal="frame_changed" from="Character/AnimatedSprite" to="Character" method="_on_AnimatedSprite_frame_changed"]

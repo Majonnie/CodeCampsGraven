@@ -1895,21 +1895,6 @@ points = PoolVector2Array( 32, 24.3442, 2.40341, 23.3396, 1.73361, 9.9437, 23.93
 
 [sub_resource type="SpriteFrames" id=70]
 animations = [ {
-"frames": [ ExtResource( 16 ) ],
-"loop": true,
-"name": "IdleLeft",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 14 ) ],
-"loop": true,
-"name": "IdleDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 29 ) ],
-"loop": true,
-"name": "IdleRight",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 27 ), ExtResource( 28 ) ],
 "loop": true,
 "name": "AttackLeft",
@@ -1920,19 +1905,34 @@ animations = [ {
 "name": "AttackUp",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 24 ), ExtResource( 13 ) ],
-"loop": true,
-"name": "AttackRight",
-"speed": 10.0
-}, {
 "frames": [ ExtResource( 25 ), ExtResource( 26 ) ],
 "loop": true,
 "name": "AttackDown",
 "speed": 10.0
 }, {
+"frames": [ ExtResource( 24 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "AttackRight",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 29 ) ],
+"loop": true,
+"name": "IdleRight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ) ],
+"loop": true,
+"name": "IdleDown",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 18 ) ],
 "loop": true,
 "name": "IdleUp",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ) ],
+"loop": true,
+"name": "IdleLeft",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 14 ), ExtResource( 12 ) ],
@@ -2025,10 +2025,10 @@ scale = Vector2( 0.55, 0.55 )
 script = ExtResource( 5 )
 
 [node name="DialogLevel4" parent="Character" instance=ExtResource( 40 )]
-margin_left = -243.636
-margin_top = -78.1818
-margin_right = 396.364
-margin_bottom = 284.818
+margin_left = -252.727
+margin_top = -69.0909
+margin_right = 387.273
+margin_bottom = 293.909
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Character"]
 scale = Vector2( 0.015, 0.015 )

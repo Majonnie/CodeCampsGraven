@@ -8,8 +8,12 @@
 script/source = "extends Control
 
 var dialog = [
-	'[ONA] Voilà, le Sanctuaire de l\\'âme' ,
-	 '[ONA] c\\'est un endroit paisible où reposent en paix tes beaux souvenirs',
+	'[Charly] \"*Bizzare pourquoi je me suis téléporté dans un autre monde qui est différent des autres?*\"',
+	'[ONA] C\\'est normal tout est anormal dans les rêves',
+	'[Charly] \"*Il m\\'a entendu ??*\"',
+	'[ONA] Je suis toi, idiot ! donc je sais tout',
+	'[Charly] ah ui c\\'est vrai  -_-\" ',
+	 '[ONA] Le sanctuaire est un endroit paisible où reposent en paix tes beaux souvenirs',
 	'[ONA] C\\'est ici que ton passé vit, avec le temps je serais toujours là pour les garder précieusement ici' ,
 	'[ONA Tu reviendra toujours ici quand tu te sentira triste ou même heureux !' ,
 	'[ONA] Des démons ! Vite il faut les arreter, cette endroit est sacrée pour ton âme !',

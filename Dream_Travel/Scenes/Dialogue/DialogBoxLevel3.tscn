@@ -11,7 +11,9 @@ var dialog = [
 	'[ONA] Chaque pièce représente une parti de toi, autrefois elles étaient sans crainte',
 	 '[ONA] mais comme tu grandi, beaucoup de problèmes dont tu ne te souciais pas font surface',
 	'[Charly] Alors c\\'est vrai ? Tu es vraiment moi ? où suis-je maintenant ?',
-	'[ONA] Oui, Tu es dans ton coeur spirituelle, on arrive bientot dans le sanctuaire'
+	'[ONA] Oui, Tu es dans ton coeur spirituelle les âmes damnés on l\\'on saccagé', 
+	'[ONA] Ils ont envahit ton coeurs de mauvaises ondes',  
+	'[ONA] On arrive bientot dans le sanctuaire'
 	
 ]
 
@@ -100,7 +102,7 @@ anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -167.0
 margin_right = 52.0
-margin_bottom = 44.0
+margin_bottom = 51.0
 texture = ExtResource( 1 )
 expand = true
 stretch_mode = 1
@@ -110,8 +112,8 @@ anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -158.0
 margin_top = 5.0
-margin_right = 36.0
-margin_bottom = 42.0
+margin_right = 45.0
+margin_bottom = 46.0
 theme = SubResource( 2 )
 custom_colors/default_color = Color( 0.878431, 0.858824, 0.823529, 1 )
 custom_fonts/normal_font = SubResource( 3 )
